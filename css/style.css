@@ -1,30 +1,75 @@
 /*Pour tout le monde*/
-html{
-    width : 100%;
-    height : 100%;
+
+html {
+	width: 100%;
+	height: 100%;
 }
-body
-{
-    margin: 0px;
-    font-family: 'Open Sans', sans-serif;
-    width : 100%;
-    height : 100%;
+
+body {
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	height: 100%;
 }
-*{
-    box-sizing: border-box;
+
+* {
+	box-sizing: border-box;
 }
+
+a {
+	background-color: transparent;
+	color: black;
+	text-decoration: none;
+}
+
+
 /* Début Alexis*/
+
+
+/* ADMIN HUB DEBUT */
+
+#a_admin_hub section {
+	display: flex;
+	justify-content: space-around;
+}
+
+#a_admin_hub section #a_menu_div {}
+
+#a_admin_hub section #a_menu_div svg {
+	width: 48px;
+	height: 48px;
+}
+
+#a_admin_hub section #a_article_div svg {
+	width: 48px;
+	height: 48px;
+}
+
+#a_admin_hub section #a_reponses_div svg {
+	width: 40px;
+	height: 40px;
+}
+
+
+/* ADMIN HUB FIN */
+
 
 /* Fin ALexis */
 
+
 /* Début Corentin */
+
 
 /* Fin Corentin */
 
+
 /* Début Samory */
+
 
 /* Fin Samory */
 
+
 /* Début Charles */
+
 
 /* Fin Charles */
