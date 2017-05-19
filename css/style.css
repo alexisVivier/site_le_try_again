@@ -173,7 +173,7 @@ a {
         height: 100%;
         width: 20vw;
         font-size: 200%;
-        color: aliceblue;
+        color:#FFFFFF;
         background-color: #3D3D3D;
         border: solid;
         border-color: #3D3D3D;
@@ -186,7 +186,7 @@ a {
         align-content: flex-start;
         width: 80vw;
         height: 100%;
-        color: aliceblue;
+         color:#FFFFFF;
     }
     
     #s_header
@@ -203,10 +203,11 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: aliceblue;
+        color:#FFFFFF;
         margin-top: 0%;
         height: 100%;
         width: 100%;
+        font-size: 1.4vw;
         border: solid;
         border-color: #2C2C2C;
         background-color: #2C2C2C;
@@ -223,13 +224,132 @@ a {
 
     #le_try_again
     {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        width: 100%;
         font-family: 'Lobster', cursive;
-        color: aliceblue;
+        color:#FFFFFF;
+        font-size: 3vw;
     }
 
     /******************************************************/
     /********************** fin header*******************/
     /******************************************************/
+
+    /*---------------------------
+    --------début footer--------
+    ---------------------------*/
+    
+    #s_footer
+    {
+        height: 10vw;
+    }
+    
+   #s_footer #footer_haut
+    {
+        display: flex;
+        align-items: flex-start;
+        height: 50%;
+        width: 100%;
+        background-color: #2C2C2C;
+        
+    }
+    
+  #s_footer #footer_bas
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        background-color: #EDEDED;
+        color: #2C2C2C;
+        font-weight: bold;
+    }
+
+ #s_footer #reseaux_sociaux
+    {   
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        width: 30%;
+    }
+
+#s_footer .reseaux_sociaux_logo
+    {
+       width: 20%; 
+    }
+
+#s_footer #autre
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    #s_footer .nav_footer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#FFFFFF;
+        font-weight: bold;
+        font-size:1vw;
+        width:9vw;
+        height: 100%;
+        transition: color 0.3s linear;
+    }
+
+     #s_footer #CGU
+    {
+          font-size:1vw;        
+    }
+
+      #s_footer .nav_footer:hover
+    {
+       color: #AFD5EC;
+    }
+     /*---------------------------
+    --------début homepage--------
+    ---------------------------*/
+
+    #homepage #food_truck
+    {
+        width:  100%;
+        height: 40vw;
+    }
+    
+    #homepage #texte_sur_image
+    {
+            
+            position: absolute;
+            margin-left: 20% ;
+            margin-top: -25%;
+            font-size: 5vw;
+            color: white;
+    }
+
+    #fleche
+    {
+        width: 5%; 
+        position: absolute;
+        margin-top: -9%;
+        margin-left: 50%;
+    }
+
+       /*---------------------------
+    --------fin homepage--------
+    ---------------------------*/
+
+
+    /*---------------------------
+    --------fin footer--------
+    ---------------------------*/
 
 
 /* Fin Samory */
