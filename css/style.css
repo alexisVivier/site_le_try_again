@@ -310,6 +310,154 @@ a {
 	margin: auto;
 }
 
+#a_admin_article #a_articleModifsContainer #addArticleContainer {
+	margin-right: 2.5vw;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	color: white;	
+}
+
+#a_admin_article #a_articleModifsContainer #addArticleContainer form {
+	display: flex;
+	flex-direction: column;
+}
+
+#a_admin_article #a_articleModifsContainer #addArticleContainer form div {
+	display: flex;
+	justify-content: space-between;
+	padding: 1vh 0;
+}
+
+#a_admin_article #a_articleModifsContainer #addArticleContainer form textarea {
+	width: 80%;
+	height: 40vh;
+	border: solid 1px white;
+}
+
+#a_admin_article #a_articleModifsContainer #addArticleContainer form input {
+	border-bottom: solid 1px white;
+}
+
+#a_admin_article #a_articleModifsContainer #addArticleContainer form input[type=submit] {
+	width: 40%;
+	margin: auto;
+	font-size: 18px;
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 5px;
+	padding: 0.5vh;
+	margin-top: 3vh;
+	color: #3D3D3D;
+}
+
+#a_admin_article #a_articleModifsContainer #addArticleContainer form input[type=submit]:hover {
+	border: 1px solid white;
+	background-color: #3D3D3D;
+	transition: 0.3s;
+	border-radius: 5px;
+	padding: 0.5vh;
+	color: #AFD5EC;
+}
+
+#a_admin_article #a_articleModifsContainer #addArticleContainer h2 {
+	text-align: center;
+	padding: 3vh 0;
+}
+
+#a_admin_article #a_articleModifsContainer #removeArticleContainer {
+	margin-left: 2.5vw;
+	width: 40%;
+	color: white;
+}
+
+#a_admin_article #a_articleModifsContainer #removeArticleContainer form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#a_admin_article #a_articleModifsContainer #removeArticleContainer form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#a_admin_article #a_articleModifsContainer #removeArticleContainer form input[type=submit] {
+	width: 40%;
+	margin: auto;
+	font-size: 18px;
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 5px;
+	padding: 0.5vh;
+	margin-top: 3vh;
+	color: #3D3D3D;
+}
+
+#a_admin_article #a_articleModifsContainer #removeArticleContainer form input[type=submit]:hover {
+	border: 1px solid white;
+	background-color: #3D3D3D;
+	transition: 0.3s;
+	border-radius: 5px;
+	padding: 0.5vh;
+	color: #AFD5EC;
+}
+
+#a_admin_article #a_articleModifsContainer #removeArticleContainer h2 {
+	text-align: center;
+	padding: 3vh 0;
+}
+
+/*-----------------------------------------------------------------*/
+/*--------------------------ADMIN - MAIL-----------------------------*/
+/*-----------------------------------------------------------------*/
+
+#a_admin_mail header p {
+	font-size: 50px;
+	text-align: center;
+	margin-top: 5vh;
+}
+
+#a_admin_mail h1 {
+	font-size: 40px;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 5vh;
+}
+
+#a_admin_mail {
+	color: white;
+	background-color: #3D3D3D;
+}
+
+#a_admin_mail #mailContainer {
+	display: flex;
+	justify-content: space-around;
+	width: 80vw;
+	margin: 5vh auto;
+	padding: 4vh 0;
+	border: 1px solid white;
+}
+
+#a_admin_mail #mailContainer #mailText {
+	width: 45%;
+}
+
+#a_admin_mail #mailContainer #mailInformations {
+	width: 45%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#a_admin_mail #mailContainer #mailInformations #infosReservationsLeft {
+	
+}
+
+#a_admin_mail #mailContainer #mailInformations #infosReservationsRight {
+	
+}
+
 /* Fin ALexis */
 
 
