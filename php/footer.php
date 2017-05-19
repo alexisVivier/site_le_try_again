@@ -1,10 +1,3 @@
- <head>
-        <meta charset="utf-8"/>
-        <title> Footer</title>
-         <link href="../../css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lobster|Muli" rel="stylesheet"> 
-    </head >
-    <body/>
         <footer id="s_footer">
         <div id="footer_haut">
         <div id="reseaux_sociaux">
