@@ -673,33 +673,121 @@ section#co_frites h2{
     --------début homepage--------
     ---------------------------*/
 
-    #homepage #food_truck
+    #s_homepage #food_truck
     {
         width:  100%;
         height: 40vw;
     }
     
-    #homepage #texte_sur_image
+    #s_homepage #texte_sur_image
     {
-            
+            font-family: 'Muli', sans-serif;
             position: absolute;
             margin-left: 20% ;
             margin-top: -25%;
             font-size: 5vw;
             color: white;
+            
     }
 
-    #fleche
+   #s_homepage #fleche
     {
         width: 5%; 
         position: absolute;
         margin-top: -9%;
         margin-left: 50%;
         fill: white ;
-        font-family: 'Muli', sans-serif;
     }
 
-       /*---------------------------
+    #s_homepage #nos_principes
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        height: 20vw;
+        width: 100%;
+    }
+    
+     #s_homepage .principe
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 30vw;
+    }
+
+    #s_homepage .svg
+    {
+        width: 40%;  
+        margin-left: 30%;
+        margin-bottom: 5%;
+    }
+
+    #s_homepage .front
+    {
+        font-size: 1.2vw;
+        text-align: center;
+    }
+
+    
+    #s_homepage #nos_burgers
+    {
+        height: 40vw;
+        width: 100%;
+        background-color: #2C2C2C;
+    }
+
+     #s_homepage #les_burgers
+    {
+        display: flex;
+        align-content:flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 37vw;
+    }
+    #s_homepage .titre
+    {
+         font-family: 'Muli', sans-serif;
+         font-size: 2vw;
+         color: white;
+    }
+
+    #s_homepage .burger
+    {
+        display: flex;
+        flex-direction: column;
+        width:20%;
+        height: 60%;
+        
+    }
+
+    #s_homepage .circle
+    {
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    padding-top: 40%;
+    background: white;
+    margin: auto;
+    }
+
+    #s_homepage .type
+    {
+        font-size: 2vw;
+        margin: auto;
+    }
+    #s_homepage .specialite
+    {
+        font-size: 1.5vw;
+        margin-left: 28%; 
+    }
+    
+    /*---------------------------
     --------fin homepage--------
     ---------------------------*/
 
