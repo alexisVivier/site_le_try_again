@@ -486,25 +486,108 @@ section#co_burgersBlock article.co_burgerBlock svg{
 
 section#co_frites{
     position:relative;
-    background-image: url(../images/burger_and_fries_wallpaper.png);
-    height:900px;
+    background-color:#2c2c2c;
+    /*background-image: url(../images/burger_and_fries_wallpaper.png);*/
+    /*height:900px;*/
 }
-section#co_frites div#co_filter{
+section#co_frites img{
     z-index:0;
+    position:relative;
+    width:100vw;
+    filter:blur(5px);
+    
+}
+/*section#co_frites div#co_filter{
+    z-index:-1;
     position:absolute;
     top:0;
     left:0;
     width:100%;
     height:100%;
     background-color:RGBA(0,0,0,0.7);
-}
+}*/
 
 section#co_frites h2{
-    padding:20px;
-    z-index:10;
+    top:20px;
+    position:absolute;
     color:white;
 }
 
+section#co_frites p{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding: 0 3%;
+    top:20%;
+    left:10%;
+    height:65%;
+    width:40%;
+    border-style:solid;
+    border-radius:10px;
+    position:absolute;
+    color:white;
+    background-color: #2c2c2c;
+    font-size:2vw;
+}
+
+section#co_frites p svg{
+    height:30%;
+    margin:10% 0;
+}
+
+section#co_boissons{
+    display:flex;
+    flex-direction:column;
+    color:white;
+    background-color:#3d3d3d;
+    padding:20px;
+}
+
+section#co_boissons #co_boissonsBlock{
+    display:flex;
+}
+
+section#co_boissons #co_boissonsBlock .co_boissonBlock{
+    width:50%;
+    padding:2% 0 10% 0;
+}
+
+section#co_boissons #co_boissonsBlock .co_boissonBlock .co_titleBoissonBlock{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+section#co_boissons #co_boissonsBlock  #co_sansAlcool{
+    border-right-style:solid;
+    border-color: white;
+    border-width:3px;
+}
+
+section#co_boissons #co_boissonsBlock  #co_alcool{
+    border-left-style:solid;
+    border-color: white;
+    border-width:3px;
+}
+
+
+section#co_boissons #co_boissonsBlock .co_boissonBlock .co_titleBoissonBlock img{
+    height:6vw;
+}
+
+section#co_boissons #co_boissonsBlock .co_boissonBlock .co_titleBoissonBlock h3{
+    font-size:2.3vw;
+    height:100%;
+    
+}
+section#co_boissons #co_boissonsBlock .co_boissonBlock ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding:10%;
+    font-size: 2vw;
+}
 
 /*-----------------------------FIN LA CARTE------------------------*/
 
