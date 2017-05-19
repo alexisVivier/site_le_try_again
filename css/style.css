@@ -54,6 +54,7 @@ a {
 	font-size: 50px;
 	text-align: center;
 	margin-top: 5vh;
+	color: white;
 }
 
 /* FIN HEADER ADMIN */
@@ -61,6 +62,10 @@ a {
 /*---------------------------
 ----------HUB ADMIN----------
 ---------------------------*/
+
+#a_admin_hub {
+	background-color: #3D3D3D;
+}
 
 #a_admin_hub #a_boutons_container {
 	display: flex;
@@ -71,7 +76,7 @@ a {
 
 #a_admin_hub #a_boutons_container a {
 	width: 30%;
-	border: solid 1px black;
+	border: solid 1px white;
 	text-align: center;
 	padding: 8vh 0;
 }
@@ -81,11 +86,13 @@ a {
 	justify-content: center;
 	align-items: center;
 	margin: 8vh 0;
+	color: white;
 }
 
 #a_admin_hub #a_title_admin_hub svg {
-	width: 48px;
-	height: 48px;
+	width: 56px;
+	height: 56px;
+	stroke: white;
 }
 
 #a_admin_hub #a_title_admin_hub h1 {
@@ -98,9 +105,9 @@ a {
 }
 
 #a_admin_hub #a_boutons_container a:hover {
-	background-color: #AFD5EC;
+	background-color: white;
 	transition-duration: 0.5s;
-	border: solid 1px #AFD5EC;
+	border: solid 1px white;
 }
 
 #a_admin_hub #a_boutons_container h2 {
@@ -122,19 +129,186 @@ a {
 	height: 40px;
 }
 
-#a_admin_hub #a_boutons_container div:hover  {
-	background-color: 
-}
-
-
 /* ADMIN HUB FIN */
 
 /*-----------------------------------------------------------------*/
 /*-------------------------ADMIN BURGERS---------------------------*/
 /*-----------------------------------------------------------------*/
 
+/*---------------------------
+--------HEADER ADMIN--------
+---------------------------*/
+
+#a_admin_burgers header p {
+	font-size: 50px;
+	text-align: center;
+	margin-top: 5vh;
+}
+
+/* FIN HEADER ADMIN */
+
+#a_admin_burgers h1 {
+	margin-top: 5vh;
+	font-size: 40px;
+	font-weight: 100;
+	text-align: center;
+}
+
+#a_admin_burgers {
+	color: white;
+	background-color: #3D3D3D;
+}
+
+/*Grand conteneur pour les trois parties add remove et update*/
+
+#a_admin_burgers #a_burgersModifsContainer {
+	display: flex;
+	justify-content: space-around;
+	width: 80vw;
+	margin: auto;
+}
+
+/*Ajouter*/
+
+#a_admin_burgers #a_burgersModifsContainer #a_burgersModifsAdd {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #a_burgersModifsAdd h2 {
+	text-align: center;
+	padding: 3vh 0;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #a_burgersModifsAdd form {
+	display: flex;
+	flex-direction: column;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #a_burgersModifsAdd form div {
+	display: flex;
+	justify-content: space-between;
+	padding: 1vh 0;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #a_burgersModifsAdd form input {
+	border-bottom: solid 1px white;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #a_burgersModifsAdd form input[type=submit] {
+	width: 40%;
+	margin: auto;
+	font-size: 18px;
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 5px;
+	padding: 0.5vh;
+	margin-top: 3vh;
+	color: #3D3D3D;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #a_burgersModifsAdd form input[type=submit]:hover {
+	border: 1px solid white;
+	background-color: #3D3D3D;
+	transition: 0.3s;
+	border-radius: 5px;
+	padding: 0.5vh;
+	color: #AFD5EC;
+}
+
+/*Supprimer*/
+
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsRemove {
+	width: 30%;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsRemove h2 {
+	text-align: center;
+	padding: 3vh 0;
+}
+
+/*Modifier*/
+
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate {
+	width: 30%;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate h2 {
+	text-align: center;
+	padding: 3vh 0;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form {
+	display: flex;
+	flex-direction: column;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form div {
+	display: flex;
+	justify-content: space-between;
+	padding: 1vh 0;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form input, select {
+	border-bottom: solid 1px white;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form input[type=submit] {
+	width: 40%;
+	margin: auto;
+	font-size: 18px;
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 5px;
+	padding: 0.5vh;
+	margin-top: 3vh;
+	color: #3D3D3D;
+}
+
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form input[type=submit]:hover {
+	border: 1px solid white;
+	background-color: #3D3D3D;
+	transition: 0.3s;
+	border-radius: 5px;
+	padding: 0.5vh;
+	color: #AFD5EC;
+}
+
 /* ADMIN BURGERS FIN */
 
+/*-----------------------------------------------------------------*/
+/*---------------------------ADMIN - ARTICLE------------------------------*/
+/*-----------------------------------------------------------------*/
+
+/*HEADER ADMIN ARTICLE*/
+
+#a_admin_article header p {
+	font-size: 50px;
+	text-align: center;
+	margin-top: 5vh;
+}
+
+#a_admin_article h1 {
+	font-size: 40px;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 5vh;
+}
+
+#a_admin_article {
+	color: white;
+	background-color: #3D3D3D;
+}
+
+/*ADMIN ARTICLE CONTENU*/
+
+#a_admin_article #a_articleModifsContainer {
+	display: flex;
+	width: 80vw;
+	justify-content: center;
+	margin: auto;
+}
 
 /* Fin ALexis */
 
