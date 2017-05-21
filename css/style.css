@@ -462,6 +462,70 @@ a {
 /*------------------------SITE - ARTICLE---------------------------*/
 /*-----------------------------------------------------------------*/
 
+#a_Article {
+	background-color : #2C2C2C;
+}
+
+#a_Article #title {
+	text-align: center;
+    background-color : #2C2C2C;
+    color:#EDEDED;
+    padding:3% 0;
+    font-size:3.5vw;
+}
+
+#a_Article section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color : #2C2C2C;
+    color:#EDEDED;
+}
+
+#a_Article section #container {
+	display: flex;
+	justify-content: space-around;
+	width: 95vw;
+	margin: auto;
+}
+
+#a_Article section #container #left {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	padding-right: 2vw;
+}
+
+#a_Article section #container #left img {
+	width: 35vw;
+}
+
+#a_Article section #container #left #botInfos {
+	background-color: #EDEDED;
+	color: #2C2C2C;
+	margin-top: 2vh;
+	width: 35vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#a_Article section #container #left #botInfos div {
+	font-size: 1vw;
+	margin-left: 2vw;
+}
+
+#a_Article section #container #left #botInfos svg {
+	width: 3vw;
+	height: 4vh;
+	margin-right: 2vw;
+}
+
+#a_Article section #container #right {
+	padding-left: 2vw;
+	width: 60%;
+	font-size: 2vw;
+}
 
 
 /* Fin ALexis */
