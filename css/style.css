@@ -977,7 +977,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul{
     display: flex;
     flex-direction: column;
     background: #EDEDED;
-    padding-bottom:20px;
+    padding-bottom:3vw;
 }
 
 #co_aPropos h2{
@@ -1022,6 +1022,58 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul{
 #co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg #samory{
     left:calc(50% - (40%/2));
     top:10%;
+}
+
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #corentin{
+    animation: 0.3s ease-out 0s 1 co_corentinJump;
+}
+
+@keyframes co_corentinJump {
+    0% {
+        bottom:10%;
+    }
+    50%{
+        bottom:20%;
+    }
+    100% {
+        bottom:10%;
+    }
+}
+
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #alexis{
+    animation: 0.3s ease-out 0.10s 1 co_alexisJump;
+}
+
+@keyframes co_alexisJump {
+    0% {
+        top:calc(50% - (40%/2));
+    }
+    50%{
+        top:calc(40% - (40%/2));
+    }
+    100% {
+        top:calc(50% - (40%/2));
+    }
+}
+
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #samory{
+    animation: 0.3s ease-out 0.20s 1 co_samoryJump;
+}
+
+@keyframes co_samoryJump {
+    0% {
+        top:10%;
+    }
+    50%{
+        top:0%;
+    }
+    100% {
+        top:10%;
+    }
+}
+
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #charles{
+    animation: 0.3s ease-out 0.30s 1 co_alexisJump;
 }
 
 #co_aPropos #co_notreHistoire .co_bubble{
@@ -1096,7 +1148,6 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul{
 #co_aPropos #co_notreHistoire .co_bubble .co_triangleBubble{
     width:100%;
     height:100%; 
-    
     transform:translate(50%,0) rotate(45deg);
     animation: 0.3s ease-out 0.7s 1 co_triangleFadeIn;
     animation-fill-mode: forwards;
@@ -1109,6 +1160,51 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul{
   100% {
     background-color:#2c2c2c;
   }
+}
+
+#co_aPropos #co_nosPartenaires{
+    background-color: #2c2c2c;
+    padding-bottom:3vw;
+}
+
+#co_aPropos #co_nosPartenaires h2{
+    color:white;
+}
+
+#co_aPropos #co_nosPartenaires #co_partenairesBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#co_aPropos #co_nosPartenaires #co_partenairesBlock .co_partenaire{
+    width:28vw;
+    height:28vw;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color:white;
+    border-radius:20px;
+    
+    margin:2vw;
+  
+}
+
+
+
+#co_aPropos #co_nosPartenaires #co_partenairesBlock .co_partenaire img{
+    width:100%;
+    height:100%;
+    background-color:white;
+    border-radius:20px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    padding:3%;
+}
+
+#co_aPropos #co_nosPartenaires #co_partenairesBlock .co_partenaire:hover img{
+    transform: scale(1.15);
 }
 
 
