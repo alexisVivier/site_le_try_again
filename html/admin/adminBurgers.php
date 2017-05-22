@@ -30,8 +30,12 @@
         /* Enfin on Crée ce nouveau burger qui sera sélectionnable plus tard */
         $newBurger = $bdd->prepare("INSERT INTO burger(burger_name, ingredient_id, meat_id, cheese_id, sauce_id) VALUES (?, ?, ?, ?, ?)");
         /*---------Fin gestion ajout burger--------*/
+        
         /*---------Gestion suppression burger--------*/
-       
+        /* Dans un premier temps on selectionne tous les burgers en BDD */
+        $burgers = $bdd->query("SELECT * FROM burger");
+        /* On enlève un burger de la bdd en fonction de son id */
+        $deleteBurger = $bdd->prepare("DELETE FROM `burger` WHERE `burger`.`burger_id` = ?");
 
 
     ?>
@@ -146,20 +150,22 @@
 
         <div id="burgersModifsRemove">
             <h2>Supprimer</h2>
-            <?php 
-                 /* Dans un premier temps on selectionne tous les burgers en BDD */
-                $burgers = $bdd->query("SELECT * FROM burger");
-               
-            ?>
             <div>
                 <p>Veuillez sélectionner le burger que vous voulez enlever de la carte</p>
                 <form action="" method="post">
-                    <select>
-                        <!--					OPTIONS AVEC BOUCLE POUR AVOIR TOUS LES BURGERS DISPONIBLES ET CHOISIR CELUI QU'ON VEUT SUPPRIMER-->
+                    <select name="supprForm" id="supprForm">
+                        <!--OPTIONS AVEC BOUCLE POUR AVOIR TOUS LES BURGERS DISPONIBLES ET CHOISIR CELUI QU'ON VEUT SUPPRIMER-->
                         <?php 
+                           if(isset($_POST['suppr'])){
+                                $chosenBurger = htmlspecialchars($_POST['supprForm']);
+                                $deleteBurger->bindParam('1', $chosenBurger);
+                                $deleteBurger->execute();
+                           }   
+                        
                             while($burger = $burgers->fetch()){
-                            print_r("<option value='".$burger['burger_id']."'>".$burger['burger_name']."</option>");
-                             }
+                                print_r("<option value='".$burger['burger_id']."'>".$burger['burger_name']."</option>");
+                             } 
+
                         ?>
 					</select>
                     <input type="submit" name="suppr" value="Supprimer">
