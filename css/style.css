@@ -1,8 +1,7 @@
 /*Pour tout le monde*/
-@import url('https://fonts.googleapis.com/css?family=Lobster%7CMuli');
 
-<<<<<<< HEAD
-html {
+@import url('https://fonts.googleapis.com/css?family=Lobster%7CMuli');
+<<<<<<< HEAD html {
 	width: 100%;
 	height: 100%;
 }
@@ -14,28 +13,26 @@ body {
 	height: 100%;
 	@import url('https://fonts.googleapis.com/css?family=Lobster|Muli');
 }
-=======
->>>>>>> 1b027505af5ab1382d01fd87a13bff4183da9377
 
-html {
-    margin:0;
-    padding:0px;
+=======>>>>>>> 1b027505af5ab1382d01fd87a13bff4183da9377 html {
+	margin: 0;
+	padding: 0px;
 }
 
 body {
 	margin: 0px;
 	font-family: 'Muli', sans-serif;
 	width: 100%;
-	height: 100%;  
+	height: 100%;
 }
 
 * {
 	box-sizing: border-box;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    vertical-align: baseline;
-    background: transparent;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
 }
 
 a {
@@ -44,7 +41,9 @@ a {
 	text-decoration: none;
 }
 
+
 /* Début Alexis*/
+
 
 /*---------------------------
 --------HEADER ADMIN--------
@@ -57,7 +56,9 @@ a {
 	color: white;
 }
 
+
 /* FIN HEADER ADMIN */
+
 
 /*---------------------------
 ----------HUB ADMIN----------
@@ -129,11 +130,18 @@ a {
 	height: 40px;
 }
 
+
 /* ADMIN HUB FIN */
 
+
 /*-----------------------------------------------------------------*/
+
+
 /*-------------------------ADMIN BURGERS---------------------------*/
+
+
 /*-----------------------------------------------------------------*/
+
 
 /*---------------------------
 --------HEADER ADMIN--------
@@ -144,6 +152,7 @@ a {
 	text-align: center;
 	margin-top: 5vh;
 }
+
 
 /* FIN HEADER ADMIN */
 
@@ -159,6 +168,7 @@ a {
 	background-color: #3D3D3D;
 }
 
+
 /*Grand conteneur pour les trois parties add remove et update*/
 
 #a_admin_burgers #a_burgersModifsContainer {
@@ -167,6 +177,7 @@ a {
 	width: 80vw;
 	margin: auto;
 }
+
 
 /*Ajouter*/
 
@@ -217,6 +228,7 @@ a {
 	color: #AFD5EC;
 }
 
+
 /*Supprimer*/
 
 #a_admin_burgers #a_burgersModifsContainer #burgersModifsRemove {
@@ -227,6 +239,7 @@ a {
 	text-align: center;
 	padding: 3vh 0;
 }
+
 
 /*Modifier*/
 
@@ -250,7 +263,8 @@ a {
 	padding: 1vh 0;
 }
 
-#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form input, select {
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form input,
+select {
 	border-bottom: solid 1px white;
 }
 
@@ -275,11 +289,18 @@ a {
 	color: #AFD5EC;
 }
 
+
 /* ADMIN BURGERS FIN */
 
+
 /*-----------------------------------------------------------------*/
+
+
 /*---------------------------ADMIN - ARTICLE------------------------------*/
+
+
 /*-----------------------------------------------------------------*/
+
 
 /*HEADER ADMIN ARTICLE*/
 
@@ -301,6 +322,7 @@ a {
 	background-color: #3D3D3D;
 }
 
+
 /*ADMIN ARTICLE CONTENU*/
 
 #a_admin_article #a_articleModifsContainer {
@@ -315,7 +337,7 @@ a {
 	width: 40%;
 	display: flex;
 	flex-direction: column;
-	color: white;	
+	color: white;
 }
 
 #a_admin_article #a_articleModifsContainer #addArticleContainer form {
@@ -371,7 +393,7 @@ a {
 	color: white;
 }
 
-#a_admin_article #a_articleModifsContainer #removeArticleContainer form{
+#a_admin_article #a_articleModifsContainer #removeArticleContainer form {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -409,8 +431,13 @@ a {
 	padding: 3vh 0;
 }
 
+
 /*-----------------------------------------------------------------*/
+
+
 /*--------------------------ADMIN - MAIL-----------------------------*/
+
+
 /*-----------------------------------------------------------------*/
 
 #a_admin_mail header p {
@@ -450,36 +477,37 @@ a {
 	justify-content: space-around;
 }
 
-#a_admin_mail #mailContainer #mailInformations #infosReservationsLeft {
-	
-}
+#a_admin_mail #mailContainer #mailInformations #infosReservationsLeft {}
 
-#a_admin_mail #mailContainer #mailInformations #infosReservationsRight {
-	
-}
+#a_admin_mail #mailContainer #mailInformations #infosReservationsRight {}
+
 
 /*-----------------------------------------------------------------*/
+
+
 /*------------------------SITE - ARTICLE---------------------------*/
+
+
 /*-----------------------------------------------------------------*/
 
 #a_Article {
-	background-color : #2C2C2C;
+	background-color: #2C2C2C;
 }
 
 #a_Article #title {
 	text-align: center;
-    background-color : #2C2C2C;
-    color:#EDEDED;
-    padding:3% 0;
-    font-size:3.5vw;
+	background-color: #2C2C2C;
+	color: #EDEDED;
+	padding: 3% 0;
+	font-size: 3.5vw;
 }
 
-#a_Article section{
+#a_Article section {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color : #2C2C2C;
-    color:#EDEDED;
+	background-color: #2C2C2C;
+	color: #EDEDED;
 }
 
 #a_Article section #container {
@@ -528,193 +556,471 @@ a {
 }
 
 
+/*-----------------------------------------------------------------*/
+
+
+/*-------------------------RESERVATION-----------------------------*/
+
+
+/*-----------------------------------------------------------------*/
+
+
+/*SECTION*/
+
+#a_reservation {
+	background-color: #2C2C2C;
+}
+
+#a_reservation section {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*Première partie infos et photo pour la description*/
+
+#descResa {
+	display: flex;
+	justify-content: space-around;
+	width: 90vw;
+	margin: 2vw auto;
+}
+
+#descResa img {
+	width: 40vw;
+	height: 40vh;;
+	margin-right: 0.5vw;
+}
+
+#descResa p {
+	width: 55vw;
+	margin-left: 0.5vw;
+	font-size: 1vw;
+	color: white;
+}
+
+
+/*FORM*/
+
+form {
+	display: flex;
+/*	justify-content: space-around;*/
+	flex-direction: column;
+	margin-bottom: 2vw;
+}
+
+#formResa {
+	display: flex;
+	justify-content: space-around;
+}
+
+/*PARTIE 1 FORM*/
+
+#infosForm {
+	width: 30vw;
+	max-height: 100%;
+}
+
+
+/*Titre partie 1*/
+
+
+/*Titre infos perso*/
+
+#infosFormTitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1vw 0;
+	background-color: #AFD5EC;
+	height: 5vw;
+	color: #3D3D3D;
+	font-size: 1.15vw;
+}
+
+#infosFormTitle svg {
+	width: 2.5vw;
+	margin-right: 0.5vw;
+}
+
+
+/*Inputs plus d'infos*/
+
+#infosFormInputs {
+	background-color: #EDEDED;
+	color: #3D3D3D;
+	display: flex;
+	flex-direction: column;
+	height: 80%;
+	padding: 0.5vw 2vw;
+	font-size: 0.9vw;
+}
+
+#infosFormInputs input {
+	border-bottom: #3D3D3D solid 0.1vw;
+/*	width: 70%;*/
+}
+
+#infosFormInputs label {
+	padding: .75vw 0;
+}
+
+.nomPrenomInfos {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.nomPrenomInfos > div {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+#infosFormInputs > div{
+	display: flex;
+	flex-direction: column;
+}
+
+/*PARTIE 2 FORM*/
+
+#eventTypeInputs {
+	width: 18vw;
+}
+
+
+/*Titre type evenement*/
+
+#eventTypeTitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1vw 0;
+	background-color: #AFD5EC;
+	height: 5vw;
+	color: #3D3D3D;
+	font-size: 1.15vw;
+}
+
+#eventTypeTitle svg {
+	width: 2.5vw;
+	margin-right: 0.5vw;
+}
+
+/*Inputs form partie 2*/
+
+#eventTypeForm {
+	background-color: #EDEDED;
+	color: #3D3D3D;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 80%;
+	font-size: 0.9vw;
+}
+
+#eventTypeForm checkbox {
+	
+}
+
+#eventTypeForm div {
+	display: flex;
+	align-items: center;
+}
+
+#eventTypeForm div input {
+	margin: 0.5vw 0.5vw;
+}
+
+/*PARTIE 3 FORM*/
+
+#moreInfosForm {
+	width: 40vw;
+}
+
+
+/*Titre plus d'infos*/
+
+#moreInfosFormTitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1vw 0;
+	background-color: #AFD5EC;
+	height: 5vw;
+	color: #3D3D3D;
+	font-size: 1.15vw;
+}
+
+#moreInfosFormTitle svg {
+	width: 2.5vw;
+	margin-right: 0.5vw;
+}
+
+/*Input text area*/
+
+#textAreaMoreInfos {
+	display: flex;
+	flex-direction: column;
+	background-color: #EDEDED;
+	color: #3D3D3D;
+	font-size: 0.9vw;
+	height: 80%;
+}
+
+#textAreaMoreInfos label {
+	padding: 0.5vw 1vw;
+}
+
+#textAreaMoreInfos textarea {
+	height: 40vh;
+	margin: 0.5vw;
+	border: #3D3D3D solid 0.1vw;
+}
+
+/*BOUTON ENVOIE*/
+
+form input[type=submit] {
+	width: 10%;
+	margin: auto;
+	font-size: 1.5vw;
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 5px;
+	padding: 0.5vh;
+	margin-top: 3vh;
+	color: #3D3D3D;
+}
+
+form input[type=submit]:hover {
+	border: 1px solid white;
+	background-color: #3D3D3D;
+	transition: 0.3s;
+	border-radius: 5px;
+	padding: 0.5vh;
+	color: #AFD5EC;
+}
+
+form input[name=numerEvent] {
+	margin-bottom: 1vw;
+}
+
 /* Fin ALexis */
 
 
 /* Début Corentin */
 
-/*-----------------------------------------------------------------*/
-/*---------------------------LA CARTE------------------------------*/
+
 /*-----------------------------------------------------------------*/
 
-#co_laCarte{
-    margin: 0;
-    padding: 0;
+
+/*---------------------------LA CARTE------------------------------*/
+
+
+/*-----------------------------------------------------------------*/
+
+#co_laCarte {
+	margin: 0;
+	padding: 0;
 }
+
+
 /*Tout les h2 de la carte*/
-#co_laCarte h2{
-    padding-left:2vw; 
-    font-size:4vw;
+
+#co_laCarte h2 {
+	padding-left: 2vw;
+	font-size: 4vw;
 }
+
+
 /*Titre h1 de la page*/
-#co_laCarte h1{
-    text-align: center;
-    background-color : #2C2C2C;
-    color:#EDEDED;
-    padding:3% 0;
-    font-size:5vw;
+
+#co_laCarte h1 {
+	text-align: center;
+	background-color: #2C2C2C;
+	color: #EDEDED;
+	padding: 3% 0;
+	font-size: 5vw;
 }
+
+
 /*Le grand block formule*/
-#co_laCarte #co_formules{
-    background-color: #2C2C2C;
-    color:#EDEDED;
+
+#co_laCarte #co_formules {
+	background-color: #2C2C2C;
+	color: #EDEDED;
 }
+
 
 /*le bock formule sans le titre*/
-#co_laCarte #co_formules #co_blockFormules{
-    display:flex;
-    justify-content:space-around;
-    padding:5% 0;
+
+#co_laCarte #co_formules #co_blockFormules {
+	display: flex;
+	justify-content: space-around;
+	padding: 5% 0;
 }
+
 
 /*Une formule*/
-#co_laCarte .co_oneFormule{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    padding:2%;
-    width:30%;
-    background-color:white;
-    border-style: solid;
-    color:#2C2C2C;
-    box-shadow: 0px 10px 3px 0px #212121;
-    
+
+#co_laCarte .co_oneFormule {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2%;
+	width: 30%;
+	background-color: white;
+	border-style: solid;
+	color: #2C2C2C;
+	box-shadow: 0px 10px 3px 0px #212121;
 }
 
-#co_laCarte .co_oneFormule h3{
-    font-size:2.35vw;
+#co_laCarte .co_oneFormule h3 {
+	font-size: 2.35vw;
 }
 
-#co_laCarte .co_oneFormule p{
-    font-size:2vw;
+#co_laCarte .co_oneFormule p {
+	font-size: 2vw;
 }
+
 
 /*cercle de l'image d'une formule*/
-#co_laCarte .co_oneFormule .co_circle{
-    position: relative;
-    border-radius: 50%;
-    width: 70%;
-    height: auto;
-    padding-top: 70%;
-    background: #EDEDED;
-    margin-bottom:2%;
+
+#co_laCarte .co_oneFormule .co_circle {
+	position: relative;
+	border-radius: 50%;
+	width: 70%;
+	height: auto;
+	padding-top: 70%;
+	background: #EDEDED;
+	margin-bottom: 2%;
 }
+
 
 /*liste d'ingrédient d'une formule*/
-#co_laCarte .co_oneFormule ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align:center;
+
+#co_laCarte .co_oneFormule ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
+
 
 /*cercle du prix*/
-#co_laCarte .co_oneFormule .co_circlePrice{
-    position: absolute;
-    display: inline-block;
-    width: 20%;
-    height: 0;
-    padding: 10% 0;
-    border-radius: 50%;
-    bottom:-5%;
-    right:-5%;
-    background-color:#AFD5EC;
+
+#co_laCarte .co_oneFormule .co_circlePrice {
+	position: absolute;
+	display: inline-block;
+	width: 20%;
+	height: 0;
+	padding: 10% 0;
+	border-radius: 50%;
+	bottom: -5%;
+	right: -5%;
+	background-color: #AFD5EC;
 }
+
+
 /*texte du prix*/
-#co_laCarte .co_oneFormule .co_circlePrice p{
-    text-align:center;
-    line-height: 0;
-    color:#3D3D3D;
+
+#co_laCarte .co_oneFormule .co_circlePrice p {
+	text-align: center;
+	line-height: 0;
+	color: #3D3D3D;
+}
+
+section#co_burgers {
+	padding: 20px 0;
+	background-color: #3D3D3D;
+	color: white;
+}
+
+section#co_burgersBlock {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	color: white;
+}
+
+section#co_burgersBlock article.co_burgerBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	width: 26%;
+	margin: 2%;
+}
+
+section#co_burgersBlock article.co_burgerBlock h3 {
+	width: 100%;
+	text-align: center;
+	font-size: 2.3vw;
+	padding: 5%;
+}
+
+section#co_burgersBlock article.co_burgerBlock .co_burgerCard {
+	display: flex;
+	flex-direction: column;
+	background-color: #AFD5EC;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-radius: 10px;
+}
+
+section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_svgBurgerBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5%;
+}
+
+section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_burgerInformationsBlock {
+	height: 50%;
+	background-color: white;
+	color: #2c2c2c;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-style: solid;
+	border-radius: 0 0 10px 10px;
+}
+
+section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_burgerInformationsBlock >p {
+	font-size: 2vw;
+	text-decoration: underline;
+}
+
+section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_burgerInformationsBlock ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 1.8vw;
+}
+
+section#co_burgersBlock article.co_burgerBlock svg {
+	width: 70%;
+}
+
+section#co_frites {
+	position: relative;
+	background-color: #2c2c2c;
+	/*background-image: url(../images/burger_and_fries_wallpaper.png);*/
+	/*height:900px;*/
+}
+
+section#co_frites img {
+	z-index: 0;
+	position: relative;
+	width: 100vw;
+	filter: blur(5px);
 }
 
 
-section#co_burgers{
-    padding:20px 0;
-    background-color:#3D3D3D;
-    color:white;
-}
-
-section#co_burgersBlock{
-    display:flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    color:white;
-}
-
-section#co_burgersBlock article.co_burgerBlock{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    width:26%;
-    margin:2%;   
-}
-section#co_burgersBlock article.co_burgerBlock h3{
-    width:100%;
-    text-align:center;
-    font-size:2.3vw;
-    padding:5%;
-}
-section#co_burgersBlock article.co_burgerBlock .co_burgerCard{
-    display:flex;
-    flex-direction:column;
-    background-color:#AFD5EC;
-    width:100%;
-    height:100%;
-    border-style: solid;
-    border-radius: 10px;
-}
-
-section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_svgBurgerBlock{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    padding:5%;
-}
-
-section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_burgerInformationsBlock{
-    height:50%;
-    background-color:white;
-    color:#2c2c2c;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    border-style:solid;
-    border-radius:0 0 10px 10px;
-}
-
-section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_burgerInformationsBlock >p{
-    font-size:2vw;
-    text-decoration: underline;
-}
-section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_burgerInformationsBlock ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align:center;
-    font-size:1.8vw;
-}
-
-section#co_burgersBlock article.co_burgerBlock svg{
-    width:70%;
-}
-
-
-section#co_frites{
-    position:relative;
-    background-color:#2c2c2c;
-    /*background-image: url(../images/burger_and_fries_wallpaper.png);*/
-    /*height:900px;*/
-}
-section#co_frites img{
-    z-index:0;
-    position:relative;
-    width:100vw;
-    filter:blur(5px);
-    
-}
 /*section#co_frites div#co_filter{
     z-index:-1;
     position:absolute;
@@ -725,146 +1031,151 @@ section#co_frites img{
     background-color:RGBA(0,0,0,0.7);
 }*/
 
-section#co_frites h2{
-    top:20px;
-    position:absolute;
-    color:white;
+section#co_frites h2 {
+	top: 20px;
+	position: absolute;
+	color: white;
 }
 
-section#co_frites p{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    padding: 0 3%;
-    top:20%;
-    left:10%;
-    height:65%;
-    width:40%;
-    border-style:solid;
-    border-radius:10px;
-    position:absolute;
-    color:white;
-    background-color: #2c2c2c;
-    font-size:2vw;
+section#co_frites p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0 3%;
+	top: 20%;
+	left: 10%;
+	height: 65%;
+	width: 40%;
+	border-style: solid;
+	border-radius: 10px;
+	position: absolute;
+	color: white;
+	background-color: #2c2c2c;
+	font-size: 2vw;
 }
 
-section#co_frites p svg{
-    height:30%;
-    margin:10% 0;
+section#co_frites p svg {
+	height: 30%;
+	margin: 10% 0;
 }
 
-section#co_boissons{
-    display:flex;
-    flex-direction:column;
-    color:white;
-    background-color:#3d3d3d;
-    padding:20px;
+section#co_boissons {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	background-color: #3d3d3d;
+	padding: 20px;
 }
 
-section#co_boissons #co_boissonsBlock{
-    display:flex;
+section#co_boissons #co_boissonsBlock {
+	display: flex;
 }
 
-section#co_boissons #co_boissonsBlock .co_boissonBlock{
-    width:50%;
-    padding:2% 0 10% 0;
+section#co_boissons #co_boissonsBlock .co_boissonBlock {
+	width: 50%;
+	padding: 2% 0 10% 0;
 }
 
-section#co_boissons #co_boissonsBlock .co_boissonBlock .co_titleBoissonBlock{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    
-}
-section#co_boissons #co_boissonsBlock  #co_sansAlcool{
-    border-right-style:solid;
-    border-color: white;
-    border-width:3px;
+section#co_boissons #co_boissonsBlock .co_boissonBlock .co_titleBoissonBlock {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
-section#co_boissons #co_boissonsBlock  #co_alcool{
-    border-left-style:solid;
-    border-color: white;
-    border-width:3px;
+section#co_boissons #co_boissonsBlock #co_sansAlcool {
+	border-right-style: solid;
+	border-color: white;
+	border-width: 3px;
 }
 
-section#co_boissons #co_boissonsBlock .co_boissonBlock .co_titleBoissonBlock img{
-    height:6vw;
+section#co_boissons #co_boissonsBlock #co_alcool {
+	border-left-style: solid;
+	border-color: white;
+	border-width: 3px;
 }
 
-section#co_boissons #co_boissonsBlock .co_boissonBlock .co_titleBoissonBlock h3{
-    font-size:2.3vw;
-    height:100%;
-    
+section#co_boissons #co_boissonsBlock .co_boissonBlock .co_titleBoissonBlock img {
+	height: 6vw;
 }
-section#co_boissons #co_boissonsBlock .co_boissonBlock ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding:10%;
-    font-size: 2vw;
+
+section#co_boissons #co_boissonsBlock .co_boissonBlock .co_titleBoissonBlock h3 {
+	font-size: 2.3vw;
+	height: 100%;
 }
+
+section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding: 10%;
+	font-size: 2vw;
+}
+
 
 /*-----------------------------FIN LA CARTE------------------------*/
 
+
 /*-----------------------------------------------------------------*/
+
+
 /*---------------------------- BLOG -------------------------------*/
+
+
 /*-----------------------------------------------------------------*/
 
-#co_blog{
-    background-color:#212121;
-    color:white;
+#co_blog {
+	background-color: #212121;
+	color: white;
 }
 
-#co_blog h1{
-    text-align: center;
-    padding:20px;
-    font-size:5vw;
+#co_blog h1 {
+	text-align: center;
+	padding: 20px;
+	font-size: 5vw;
 }
 
-#co_blog #co_articlesBlock{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#co_blog #co_articlesBlock {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-#co_blog .co_article{
-    position:relative;
-    padding:1vw;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:45%;
-    color:#2c2c2c;
+#co_blog .co_article {
+	position: relative;
+	padding: 1vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 45%;
+	color: #2c2c2c;
 }
 
-#co_blog .co_article h2{
-    position:relative;
-    top:2%;
-    background-color:#afd5ec;
-    width:80%;
-    padding:5%;
-    font-size:2vw;
-    text-align:center;
-    box-shadow: 0px 7px 1px 0px #111111;
-    z-index:2;
+#co_blog .co_article h2 {
+	position: relative;
+	top: 2%;
+	background-color: #afd5ec;
+	width: 80%;
+	padding: 5%;
+	font-size: 2vw;
+	text-align: center;
+	box-shadow: 0px 7px 1px 0px #111111;
+	z-index: 2;
 }
 
-#co_blog .co_article .co_imageContainer{
-    position:relative;
-    display:flex;
-    justify-content: center;
-    width:100%;
-    height:40vw;
-    overflow:hidden;
+#co_blog .co_article .co_imageContainer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 40vw;
+	overflow: hidden;
 }
 
-#co_blog .co_article .co_imageContainer img{
-    height:100%;
-    
-    
+#co_blog .co_article .co_imageContainer img {
+	height: 100%;
 }
+
 
 /*
 .co_imageContainer .co_vitre{
@@ -876,732 +1187,696 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul{
 }
 */
 
+
 /*bubble information*/
-#co_blog .co_bubble{
-    position:absolute;
-    top:70%;
-    background-color:white;
-    height:0px;
-    width:0px;
-    transition-property: height, width, transform;
-    transition-duration: 0.5s;
-    transform:translate(50%,-100%);
-    
-    border-style: solid;
-    border-color:white;
-    border-radius:50%;
-    z-index:10;
+
+#co_blog .co_bubble {
+	position: absolute;
+	top: 70%;
+	background-color: white;
+	height: 0px;
+	width: 0px;
+	transition-property: height, width, transform;
+	transition-duration: 0.5s;
+	transform: translate(50%, -100%);
+	border-style: solid;
+	border-color: white;
+	border-radius: 50%;
+	z-index: 10;
 }
 
-#co_blog .co_article:nth-child(2n) .co_bubble{
-    transform:translate(-50%,-100%);
+#co_blog .co_article:nth-child(2n) .co_bubble {
+	transform: translate(-50%, -100%);
 }
 
-#co_blog .co_article:hover .co_bubble{
-    height:30vw;
-    width:30vw;
-    
+#co_blog .co_article:hover .co_bubble {
+	height: 30vw;
+	width: 30vw;
 }
 
-
-#co_blog .co_bubble .co_pContainer{
-    overflow:hidden;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width:100%;
-    height:100%;
-    border-style: solid;
-    border-color:white;
-    border-radius:50%;
-    padding:10%
-}
-#co_blog .co_bubble p{
-    color:transparent;
-    width:100%;
-    padding:3%;
-    transition-property: color;
-    transition-delay: 0.5s;
-    transition-duration: 0.3s;
-    text-align: center;
-    font-size:1.5vw;
+#co_blog .co_bubble .co_pContainer {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50%;
+	padding: 10%
 }
 
-#co_blog .co_article:hover .co_bubble p{
-    color:#2c2c2c;
+#co_blog .co_bubble p {
+	color: transparent;
+	width: 100%;
+	padding: 3%;
+	transition-property: color;
+	transition-delay: 0.5s;
+	transition-duration: 0.3s;
+	text-align: center;
+	font-size: 1.5vw;
 }
 
-#co_blog .co_bubble .co_triangleBubbleContainer{
-    overflow:hidden;
-    position:absolute;
-    bottom:8.2%;
-    
-    height:20%;
-    width:20%;
+#co_blog .co_article:hover .co_bubble p {
+	color: #2c2c2c;
 }
 
-.co_article:nth-child(2n+1) .co_bubble .co_triangleBubbleContainer{
-    left:8.2%;
+#co_blog .co_bubble .co_triangleBubbleContainer {
+	overflow: hidden;
+	position: absolute;
+	bottom: 8.2%;
+	height: 20%;
+	width: 20%;
 }
 
-
-.co_article:nth-child(2n) .co_bubble .co_triangleBubbleContainer{
-    right:8.2%;
-    transform:rotate(-90deg);
+.co_article:nth-child(2n+1) .co_bubble .co_triangleBubbleContainer {
+	left: 8.2%;
 }
 
-#co_blog .co_bubble .co_triangleBubbleContainer .co_triangleBubble{
-    background-color:white;
-    height:100%;
-    width:100%;
-    transform: translate(-50%,50%) rotate(45deg);
+.co_article:nth-child(2n) .co_bubble .co_triangleBubbleContainer {
+	right: 8.2%;
+	transform: rotate(-90deg);
 }
 
-
+#co_blog .co_bubble .co_triangleBubbleContainer .co_triangleBubble {
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	transform: translate(-50%, 50%) rotate(45deg);
+}
 
 
 /*---------------------------- FIN BLOG ---------------------------*/
 
+
 /*-----------------------------------------------------------------*/
+
+
 /*---------------------------- A PROPOS ---------------------------*/
+
+
 /*-----------------------------------------------------------------*/
 
-#co_aPropos h1{
-    text-align: center;
-    font-size: 5vw;
-    color:#2c2c2c;
-    background: #EDEDED;
+#co_aPropos h1 {
+	text-align: center;
+	font-size: 5vw;
+	color: #2c2c2c;
+	background: #EDEDED;
 }
 
-#co_aPropos #co_notreHistoire{
-    display: flex;
-    flex-direction: column;
-    background: #EDEDED;
-    padding-bottom:3vw;
+#co_aPropos #co_notreHistoire {
+	display: flex;
+	flex-direction: column;
+	background: #EDEDED;
+	padding-bottom: 3vw;
 }
 
-#co_aPropos h2{
-    font-size: 4vw;
-    padding:20px;
-    color:#2c2c2c;
+#co_aPropos h2 {
+	font-size: 4vw;
+	padding: 20px;
+	color: #2c2c2c;
 }
 
-#co_aPropos #co_notreHistoire #co_histoireBlock{
-    position:relative;
-    display:flex;
-    flex-direction: row;
-    height:25vw;
+#co_aPropos #co_notreHistoire #co_histoireBlock {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 25vw;
 }
 
-#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg{
-    position:relative;
-    width:25vw;
-    height:100%;
-    margin-left:20px;
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg {
+	position: relative;
+	width: 25vw;
+	height: 100%;
+	margin-left: 20px;
 }
 
-#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg svg{
-    position:absolute;
-    width:40%;
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg svg {
+	position: absolute;
+	width: 40%;
 }
 
-#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg #corentin{
-    left:calc(50% - (40%/2));
-    bottom:10%;
-    z-index:1;
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg #corentin {
+	left: calc(50% - (40%/2));
+	bottom: 10%;
+	z-index: 1;
 }
 
-#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg #alexis{
-    top:calc(50% - (40%/2));
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg #alexis {
+	top: calc(50% - (40%/2));
 }
 
-#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg #charles{
-    top:calc(50% - (40%/2));
-    right:0;
-}
-#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg #samory{
-    left:calc(50% - (40%/2));
-    top:10%;
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg #charles {
+	top: calc(50% - (40%/2));
+	right: 0;
 }
 
-#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #corentin{
-    animation: 0.3s ease-out 0s 1 co_corentinJump;
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg #samory {
+	left: calc(50% - (40%/2));
+	top: 10%;
+}
+
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #corentin {
+	animation: 0.3s ease-out 0s 1 co_corentinJump;
 }
 
 @keyframes co_corentinJump {
-    0% {
-        bottom:10%;
-    }
-    50%{
-        bottom:20%;
-    }
-    100% {
-        bottom:10%;
-    }
+	0% {
+		bottom: 10%;
+	}
+	50% {
+		bottom: 20%;
+	}
+	100% {
+		bottom: 10%;
+	}
 }
 
-#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #alexis{
-    animation: 0.3s ease-out 0.10s 1 co_alexisJump;
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #alexis {
+	animation: 0.3s ease-out 0.10s 1 co_alexisJump;
 }
 
 @keyframes co_alexisJump {
-    0% {
-        top:calc(50% - (40%/2));
-    }
-    50%{
-        top:calc(40% - (40%/2));
-    }
-    100% {
-        top:calc(50% - (40%/2));
-    }
+	0% {
+		top: calc(50% - (40%/2));
+	}
+	50% {
+		top: calc(40% - (40%/2));
+	}
+	100% {
+		top: calc(50% - (40%/2));
+	}
 }
 
-#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #samory{
-    animation: 0.3s ease-out 0.20s 1 co_samoryJump;
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #samory {
+	animation: 0.3s ease-out 0.20s 1 co_samoryJump;
 }
 
 @keyframes co_samoryJump {
-    0% {
-        top:10%;
-    }
-    50%{
-        top:0%;
-    }
-    100% {
-        top:10%;
-    }
+	0% {
+		top: 10%;
+	}
+	50% {
+		top: 0%;
+	}
+	100% {
+		top: 10%;
+	}
 }
 
-#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #charles{
-    animation: 0.3s ease-out 0.30s 1 co_alexisJump;
+#co_aPropos #co_notreHistoire #co_histoireBlock #co_equipeSvg:hover #charles {
+	animation: 0.3s ease-out 0.30s 1 co_alexisJump;
 }
 
-#co_aPropos #co_notreHistoire .co_bubble{
-    position:relative;
-    background-color: #2c2c2c;
-    width:0;
-    height:100%;
-    top:100%;
-    border-style: none;
-    border-radius:10px;
-    margin-left:6%;
-    animation: 0.7s ease-out 0s 1 co_bubbleGrowUpToTopRight;
-    animation-fill-mode: forwards; 
-    transform: translateY(-100%);
-    
+#co_aPropos #co_notreHistoire .co_bubble {
+	position: relative;
+	background-color: #2c2c2c;
+	width: 0;
+	height: 100%;
+	top: 100%;
+	border-style: none;
+	border-radius: 10px;
+	margin-left: 6%;
+	animation: 0.7s ease-out 0s 1 co_bubbleGrowUpToTopRight;
+	animation-fill-mode: forwards;
+	transform: translateY(-100%);
 }
 
 @keyframes co_bubbleGrowUpToTopRight {
-  0% {
-    height:0;
-    width:0;
-  }
-  100% {
-    height:100%;
-    width:65%;
-  }
+	0% {
+		height: 0;
+		width: 0;
+	}
+	100% {
+		height: 100%;
+		width: 65%;
+	}
 }
 
-#co_aPropos #co_notreHistoire .co_bubble .co_pContainer{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    width:100%;
-    height:100%;
-    padding:4%;
-    overflow:hidden;
-    color:transparent;
-    font-size:1.65vw;
-    animation: 0.3s ease-out 1s 1 co_pBubbleFadeIn;
-    animation-fill-mode: forwards; 
-    
+#co_aPropos #co_notreHistoire .co_bubble .co_pContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 4%;
+	overflow: hidden;
+	color: transparent;
+	font-size: 1.65vw;
+	animation: 0.3s ease-out 1s 1 co_pBubbleFadeIn;
+	animation-fill-mode: forwards;
 }
+
 @keyframes co_pBubbleFadeIn {
-  0% {
-    color:transparent;
-  }
-  100% {
-    color:white;
-  }
+	0% {
+		color: transparent;
+	}
+	100% {
+		color: white;
+	}
 }
 
-#co_aPropos #co_notreHistoire .co_bubble .co_triangleBubbleContainer{
-    position:absolute;
-    overflow: hidden;
-    width:6vw;
-    height:6vw;
-/*    left:-7.2%;*/
-    bottom:17%;
-    animation: 0.3s ease-out 0.7s 1 co_triangleAppear;
-    animation-fill-mode: forwards;
+#co_aPropos #co_notreHistoire .co_bubble .co_triangleBubbleContainer {
+	position: absolute;
+	overflow: hidden;
+	width: 6vw;
+	height: 6vw;
+	/*    left:-7.2%;*/
+	bottom: 17%;
+	animation: 0.3s ease-out 0.7s 1 co_triangleAppear;
+	animation-fill-mode: forwards;
 }
 
 @keyframes co_triangleAppear {
-  0% {
-    left:15%;
-  }
-  100% {
-    left:-7.2%;
-  }
+	0% {
+		left: 15%;
+	}
+	100% {
+		left: -7.2%;
+	}
 }
 
-#co_aPropos #co_notreHistoire .co_bubble .co_triangleBubble{
-    width:100%;
-    height:100%; 
-    transform:translate(50%,0) rotate(45deg);
-    animation: 0.3s ease-out 0.7s 1 co_triangleFadeIn;
-    animation-fill-mode: forwards;
+#co_aPropos #co_notreHistoire .co_bubble .co_triangleBubble {
+	width: 100%;
+	height: 100%;
+	transform: translate(50%, 0) rotate(45deg);
+	animation: 0.3s ease-out 0.7s 1 co_triangleFadeIn;
+	animation-fill-mode: forwards;
 }
 
 @keyframes co_triangleFadeIn {
-  0% {
-    background-color:transparent;
-  }
-  100% {
-    background-color:#2c2c2c;
-  }
+	0% {
+		background-color: transparent;
+	}
+	100% {
+		background-color: #2c2c2c;
+	}
 }
 
-#co_aPropos #co_nosPartenaires{
-    background-color: #2c2c2c;
-    padding-bottom:3vw;
+#co_aPropos #co_nosPartenaires {
+	background-color: #2c2c2c;
+	padding-bottom: 3vw;
 }
 
-#co_aPropos #co_nosPartenaires h2{
-    color:white;
+#co_aPropos #co_nosPartenaires h2 {
+	color: white;
 }
 
-#co_aPropos #co_nosPartenaires #co_partenairesBlock{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#co_aPropos #co_nosPartenaires #co_partenairesBlock {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-#co_aPropos #co_nosPartenaires #co_partenairesBlock .co_partenaire{
-    width:28vw;
-    height:28vw;
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-color:white;
-    border-radius:20px;
-    
-    margin:2vw;
-  
+#co_aPropos #co_nosPartenaires #co_partenairesBlock .co_partenaire {
+	width: 28vw;
+	height: 28vw;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 20px;
+	margin: 2vw;
 }
 
-
-
-#co_aPropos #co_nosPartenaires #co_partenairesBlock .co_partenaire img{
-    width:100%;
-    height:100%;
-    background-color:white;
-    border-radius:20px;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    padding:3%;
+#co_aPropos #co_nosPartenaires #co_partenairesBlock .co_partenaire img {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border-radius: 20px;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	padding: 3%;
 }
 
-#co_aPropos #co_nosPartenaires #co_partenairesBlock .co_partenaire:hover img{
-    transform: scale(1.15);
+#co_aPropos #co_nosPartenaires #co_partenairesBlock .co_partenaire:hover img {
+	transform: scale(1.15);
 }
 
 
 /*---------------------------- FIN A PROPOS -----------------------*/
+
+
 /* Fin Corentin */
 
 
 /* Début Samory */
-    /******************************************************/
-    /********************** Début header*******************/
-    /******************************************************/
-    #s_header #logo_foodtruck
-    {
-        width: 20%;
-    }
-    
-    #s_header #titre
-    {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        height: 100%;
-        width: 20vw;
-        font-size: 200%;
-        color:#FFFFFF;
-        background-color: #3D3D3D;
-        border: solid;
-        border-color: #3D3D3D;
-    }
 
-    #s_header #navigation
-    {
-        display: flex;
-        justify-content: space-around;
-        align-content: flex-start;
-        width: 80vw;
-        height: 100%;
-         color:#FFFFFF;
-    }
-    
-    #s_header
-    {
-        
-        display: flex;
-        align-items: center;
-        height: 5vw
-     }
 
-    #s_header .nav
-    {
-        font-family: 'Muli', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:#FFFFFF;
-        margin-top: 0%;
-        height: 100%;
-        width: 100%;
-        font-size: 1.4vw;
-        border: solid;
-        border-color: #2C2C2C;
-        background-color: #2C2C2C;
-        transition: border-color 0.5s linear , color 0.5s linear , background-color 0.5s linear ;
-                
-    }
-    
-    #s_header .nav:hover
-    {   
-        background-color: #AFD5EC; 
-        color: #2C2C2C ;
-        border-color: #AFD5EC;
-    }
+/******************************************************/
 
-    #le_try_again
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70%;
-        width: 100%;
-        font-family: 'Lobster', cursive;
-        color:#FFFFFF;
-        font-size: 3vw;
-    }
 
-    /******************************************************/
-    /********************** fin header*******************/
-    /******************************************************/
+/********************** Début header*******************/
 
-    /*---------------------------
+
+/******************************************************/
+
+#s_header #logo_foodtruck {
+	width: 20%;
+}
+
+#s_header #titre {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 100%;
+	width: 20vw;
+	font-size: 200%;
+	color: #FFFFFF;
+	background-color: #3D3D3D;
+	border: solid;
+	border-color: #3D3D3D;
+}
+
+#s_header #navigation {
+	display: flex;
+	justify-content: space-around;
+	align-content: flex-start;
+	width: 80vw;
+	height: 100%;
+	color: #FFFFFF;
+}
+
+#s_header {
+	display: flex;
+	align-items: center;
+	height: 5vw
+}
+
+#s_header .nav {
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFFFFF;
+	margin-top: 0%;
+	height: 100%;
+	width: 100%;
+	font-size: 1.4vw;
+	border: solid;
+	border-color: #2C2C2C;
+	background-color: #2C2C2C;
+	transition: border-color 0.5s linear, color 0.5s linear, background-color 0.5s linear;
+}
+
+#s_header .nav:hover {
+	background-color: #AFD5EC;
+	color: #2C2C2C;
+	border-color: #AFD5EC;
+}
+
+#le_try_again {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70%;
+	width: 100%;
+	font-family: 'Lobster', cursive;
+	color: #FFFFFF;
+	font-size: 3vw;
+}
+
+
+/******************************************************/
+
+
+/********************** fin header*******************/
+
+
+/******************************************************/
+
+
+/*---------------------------
     --------début footer--------
     ---------------------------*/
-    
-    #s_footer
-    {
-        height: 10vw;
-    }
-    
-   #s_footer #footer_haut
-    {
-        display: flex;
-        align-items: flex-start;
-        height: 50%;
-        width: 100%;
-        background-color: #2C2C2C;
-        
-    }
-    
-  #s_footer #footer_bas
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50%;
-        width: 100%;
-        background-color: #EDEDED;
-        color: #2C2C2C;
-        font-weight: bold;
-    }
 
- #s_footer #reseaux_sociaux
-    {   
-        display: flex;
-        justify-content: space-around;
-        height: 100%;
-        width: 30%;
-    }
+#s_footer {
+	height: 10vw;
+}
 
-#s_footer .reseaux_sociaux_logo
-    {
-       width: 20%; 
-    }
+#s_footer #footer_haut {
+	display: flex;
+	align-items: flex-start;
+	height: 50%;
+	width: 100%;
+	background-color: #2C2C2C;
+}
 
-#s_footer #autre
-    {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 100%;
-        
-    }
+#s_footer #footer_bas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	width: 100%;
+	background-color: #EDEDED;
+	color: #2C2C2C;
+	font-weight: bold;
+}
 
-    #s_footer .nav_footer
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color:#FFFFFF;
-        font-weight: bold;
-        font-size:1vw;
-        width:9vw;
-        height: 100%;
-        transition: color 0.3s linear;
-    }
+#s_footer #reseaux_sociaux {
+	display: flex;
+	justify-content: space-around;
+	height: 100%;
+	width: 30%;
+}
 
-     #s_footer #CGU
-    {
-          font-size:1vw;        
-    }
+#s_footer .reseaux_sociaux_logo {
+	width: 20%;
+}
 
-      #s_footer .nav_footer:hover
-    {
-       color: #AFD5EC;
-    }
-     /*---------------------------
+#s_footer #autre {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+}
+
+#s_footer .nav_footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1vw;
+	width: 9vw;
+	height: 100%;
+	transition: color 0.3s linear;
+}
+
+#s_footer #CGU {
+	font-size: 1vw;
+}
+
+#s_footer .nav_footer:hover {
+	color: #AFD5EC;
+}
+
+
+/*---------------------------
     --------début homepage--------
     ---------------------------*/
 
-    #s_homepage #food_truck
-    {
-        width:  100%;
-        height: 40vw;
-         filter: brightness(50%);
-       /* filter: grayscale(0.5);*/
-    }
-    
-    #s_homepage #texte_sur_image
-    {
-            font-family: 'Muli', sans-serif;
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            margin-top: -25%;
-            font-size: 5vw;
-            color: white;
-            
-    }
+#s_homepage #food_truck {
+	width: 100%;
+	height: 40vw;
+	filter: brightness(50%);
+	/* filter: grayscale(0.5);*/
+}
 
-   #s_homepage #fleche
-    {
-        width: 5%; 
-        position: absolute;
-        margin-top: -9%;
-        margin-left: 50%;
-        fill: white ;
-    }
+#s_homepage #texte_sur_image {
+	font-family: 'Muli', sans-serif;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: -25%;
+	font-size: 5vw;
+	color: white;
+}
 
-    #s_homepage #nos_principes
-    {
-        display: flex;
-        align-items: center;
-        justify-content: space-around; 
-        height: 20vw;
-        width: 100%;
-    }
-    
-     #s_homepage .principe
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        width: 30vw;
-    }
+#s_homepage #fleche {
+	width: 5%;
+	position: absolute;
+	margin-top: -9%;
+	margin-left: 50%;
+	fill: white;
+}
 
-    #s_homepage .svg
-    {
-        width: 40%;  
-        margin-left: 30%;
-        margin-bottom: 5%;
-    }
+#s_homepage #nos_principes {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 20vw;
+	width: 100%;
+}
 
-    #s_homepage .front
-    {
-        font-size: 1.2vw;
-        text-align: center;
-    }
+#s_homepage .principe {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: 30vw;
+}
 
-    
-    #s_homepage #nos_burgers
-    {
-        width: 100%;
-        background-color: #2C2C2C;
-        z-index: 1;
-    }
+#s_homepage .svg {
+	width: 40%;
+	margin-left: 30%;
+	margin-bottom: 5%;
+}
 
-     #s_homepage #les_burgers
-    {
-        display: flex;
-        align-content:flex-start;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-    }
-    #s_homepage .titre
-    {
-         font-family: 'Muli', sans-serif;
-         font-size: 2vw;
-         color: white;
-         padding-left: 1%;
-         padding-top: 1%;
-    }
+#s_homepage .front {
+	font-size: 1.2vw;
+	text-align: center;
+}
 
-    #s_homepage .burger
-    {
-        display: flex;
-        flex-direction: column;
-        width:30%;
-        height: 60%;
-        
-    }
+#s_homepage #nos_burgers {
+	width: 100%;
+	background-color: #2C2C2C;
+	z-index: 1;
+}
 
-    #s_homepage .circle
-    {
-    display: flex;
-    position: relative;
-    border-radius: 50%;
-    width: 50%;
-    height: auto;
-    padding-top: 50%;
-    background: white;
-    margin: auto;
-    }
+#s_homepage #les_burgers {
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
 
-    #s_homepage .type
-    {
-        font-size: 2vw;
-        width: 100%;
-        text-align: center;
-         color: white;
-        padding-top: 1%;
-    }
-    #s_homepage .specialite
-    {
-        font-size: 1.5vw;
-        width: 100%;
-        text-align: center;
-         color: white;
-    }
+#s_homepage .titre {
+	font-family: 'Muli', sans-serif;
+	font-size: 2vw;
+	color: white;
+	padding-left: 1%;
+	padding-top: 1%;
+}
 
-     #s_homepage #fond1
-    {
-        height: 80%;
-        width: 100%;
-        background-color: #AFD5EC;
-    }
+#s_homepage .burger {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	height: 60%;
+}
 
-     #s_homepage #fond2
-    {
-        height: 20%;
-        width: 100%;
-        background-color:#B4D87D;
-    }
+#s_homepage .circle {
+	display: flex;
+	position: relative;
+	border-radius: 50%;
+	width: 50%;
+	height: auto;
+	padding-top: 50%;
+	background: white;
+	margin: auto;
+}
 
-     #s_homepage #fond3
-    {
-        margin-top: -36%;
-        margin-left:50%;
-        height: 200%;
-        width: 58%;
-        transform:rotate(120deg);
-        z-index: 0;
-        background-color: white;
-    }
-    
-    #s_homepage #reservez_nos_services
-    {
-        height: 25vw;
-        width: 100%;
-       overflow: hidden;
-    }
-    
-     #s_homepage #reserve
-    {
-       margin-top: -80%; 
-    }
+#s_homepage .type {
+	font-size: 2vw;
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding-top: 1%;
+}
 
-    #s_homepage .svg2
-    {   
-        width: 10%;
-        position: absolute;
-        
-    }
+#s_homepage .specialite {
+	font-size: 1.5vw;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
 
-    #s_homepage #trait
-    {
-     margin-top: -26%;
-        margin-left: 23%;
-        width: 6%;
-    }
-    
-   #s_homepage  #trait2
-    {
-         margin-top: -24%;
-        margin-left: 21%;
-        width: 6%;
-    }
+#s_homepage #fond1 {
+	height: 80%;
+	width: 100%;
+	background-color: #AFD5EC;
+}
 
-    #s_homepage  #trait3
-    {
-        margin-top: -25%;
-        margin-left: 22%;
-        width: 6%;
-    }
+#s_homepage #fond2 {
+	height: 20%;
+	width: 100%;
+	background-color: #B4D87D;
+}
 
-    #s_homepage #camion
-    {
-        margin-top: -27%;
-        margin-left: 30%;
-    }
+#s_homepage #fond3 {
+	margin-top: -36%;
+	margin-left: 50%;
+	height: 200%;
+	width: 58%;
+	transform: rotate(120deg);
+	z-index: 0;
+	background-color: white;
+}
 
-     #s_homepage #nuage_1
-    {
-        margin-top: -39%;
-        margin-left: 30%;
-        
-    }
+#s_homepage #reservez_nos_services {
+	height: 25vw;
+	width: 100%;
+	overflow: hidden;
+}
 
-    #s_homepage #nuage_2
-    {
-        margin-top: -42%;
-        margin-left: 5%;
-        width: 16%;
-    }
+#s_homepage #reserve {
+	margin-top: -80%;
+}
 
-    #s_homepage #reserve
-    {
-        position: absolute;
-         margin-top: -26%; 
-        margin-left: 54%;
-        font-size: 4vw;
-        width: 45%;
-    }
+#s_homepage .svg2 {
+	width: 10%;
+	position: absolute;
+}
 
-    #s_homepage #nos_partenaires
-    {
-        background-color: #2C2C2C;
-    }
-    
-    /*---------------------------
+#s_homepage #trait {
+	margin-top: -26%;
+	margin-left: 23%;
+	width: 6%;
+}
+
+#s_homepage #trait2 {
+	margin-top: -24%;
+	margin-left: 21%;
+	width: 6%;
+}
+
+#s_homepage #trait3 {
+	margin-top: -25%;
+	margin-left: 22%;
+	width: 6%;
+}
+
+#s_homepage #camion {
+	margin-top: -27%;
+	margin-left: 30%;
+}
+
+#s_homepage #nuage_1 {
+	margin-top: -39%;
+	margin-left: 30%;
+}
+
+#s_homepage #nuage_2 {
+	margin-top: -42%;
+	margin-left: 5%;
+	width: 16%;
+}
+
+#s_homepage #reserve {
+	position: absolute;
+	margin-top: -26%;
+	margin-left: 54%;
+	font-size: 4vw;
+	width: 45%;
+}
+
+#s_homepage #nos_partenaires {
+	background-color: #2C2C2C;
+}
+
+
+/*---------------------------
     --------fin homepage--------
     ---------------------------*/
 
 
-    /*---------------------------
+/*---------------------------
     --------fin footer--------
     ---------------------------*/
 
