@@ -59,7 +59,6 @@
                         $lastName = htmlspecialchars($_POST['auteurLastName']);
                         $articleTitle = htmlspecialchars($_POST['articleTitle']);
                         $articleTxt = htmlspecialchars($_POST['articleTxt']);
-                        print_r($lastName);
                         /* Execution des requêtes */
                         $articleAuthor->bindParam('1', $firstName);
                         $articleAuthor->bindParam('2', $lastName);

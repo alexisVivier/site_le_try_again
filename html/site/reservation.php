@@ -6,13 +6,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0"> </head>
 <link rel="stylesheet" type="text/css" href="../../css/style.css">
-
+<?php  
+        
+        try{
+            $bdd=new PDO("mysql:host=localhost;dbname=tryagain; charset=utf8","root","");
+        }
+            catch(PDOException $e){
+                die('Erreur : ' . $e->getMessage());
+            }
+        
+        $bdd ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+        
+        $newResa = $bdd->prepare("SELECT * FROM event WHERE CURRENT_DATE < event_date ORDER BY event_date");
+    
+    ?>
 <body id="a_reservation">
 	<section>
-		<div id="descResa"> <img src="/images/lolo.jpg">
+		<div id="descResa"> <img src="../../images/lolo.jpg">
 			<p>Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat, urbs perspicabilis hanc condidisse Perseus memoratur, Iovis filius et Danaes, vel certe ex Aethiopia profectus Sandan quidam nomine vir opulentus et nobilis et Anazarbus auctoris vocabulum referens, et Mopsuestia vatis illius domicilium Mopsi, quem a conmilitio Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales. Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit. Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen. Sed cautela nimia in peiores haeserat plagas, ut narrabimus postea, aemulis consarcinantibus insidias graves apud Constantium, cetera medium principem sed siquid auribus eius huius modi quivis infudisset ignotus, acerbum et inplacabilem et in hoc causarum titulo dissimilem sui.</p>
 		</div>
-		<form>
+		<form action="" method="post">
 			<div id="formResa">
 				<div id="infosForm">
 					<div id="infosFormTitle">
@@ -31,27 +44,27 @@
 						<div class="nomPrenomInfos">
 							<div>
 								<label for="nomReservation">Nom</label>
-								<input type="text" value="" name="nomReservation">
+								<input type="text" name="nomReservation">
 							</div>
 							<div>
 								<label for="prenomReservation">Prénom</label>
-								<input type="text" value="">
+								<input type="text" name="prenomReservation">
 							</div>
 						</div>
 						<div>
 							<label for="mailReservation">Adresse mail</label>
-							<input type="email" value="" name="mailReservation">
+							<input type="email"  name="mailReservation">
 						</div>
 						<div>
 							<label for="phoneReservation">Numéro de téléphone</label>
-							<input type="number" value="" name="phoneReservation">
+							<input type="number"  name="phoneReservation">
 						</div>
 						<div>
 							<label for="dateEvent">Date de l'évenement</label>
-							<input type="date" value="" name="dateEvent"> </div>
+							<input type="date"  name="dateEvent"> </div>
 						<div>
 							<label for="numerEvent">Nb de personnes présentes</label>
-							<input type="number" name="numerEvent">
+							<input type="number" name="peopleEvent">
 						</div> 
 					</div>
 				</div>
@@ -70,36 +83,32 @@
 							<h2>Type évenement</h2> </div>
 					<div id="eventTypeForm">
 						<div id="typeEventOne">
-							<input type="radio" name="eventType">
-							<p>Lorem ipsum</p>
+							<input type="radio" name="eventType" value="anniversaire">
+							<p>Anniversaire</p>
 						</div>
 						<div id="typeEventOne">
-							<input type="radio" name="eventType">
-							<p>Lorem ipsum</p>
+							<input type="radio" name="eventType" value="bapteme">
+							<p>Baptême</p>
 						</div>
 						<div id="typeEventOne">
-							<input type="radio" name="eventType">
-							<p>Lorem ipsum</p>
+							<input type="radio" name="eventType" value="brunch">
+							<p>Brunch</p>
 						</div>
 						<div id="typeEventOne">
-							<input type="radio" name="eventType">
-							<p>Lorem ipsum</p>
+							<input type="radio" name="eventType" value="eventCompany">
+							<p>Evenement d'entreprise</p>
 						</div>
 						<div id="typeEventTwo">
-							<input type="radio" name="eventType">
-							<p>Lorem ipsum</p>
+							<input type="radio" name="eventType" value="mariage">
+							<p>Mariage</p>
 						</div>
 						<div id="typeEventThree">
-							<input type="radio" name="eventType">
-							<p>Lorem ipsum</p>
+							<input type="radio" name="eventType" value="festival">
+							<p>Festival</p>
 						</div>
 						<div id="typeEventFour">
-							<input type="radio" name="eventType">
-							<p>Lorem ipsum</p>
-						</div>
-						<div id="typeEventFive">
-							<input type="radio" name="eventType">
-							<p>Lorem ipsum</p>
+							<input type="radio" name="eventType" value="autre">
+							<p>Autre</p>
 						</div>
 					</div>
 				</div>
@@ -118,11 +127,25 @@
 							<h2>Informations complémentaires</h2> </div>
 					<div id="textAreaMoreInfos">
 						<label for="textAreaResa">Si vous avez plus d'infos à nous donner veuillez les mettre dans ce champ : </label>
-						<textarea name="textAreaResa"></textarea>
+						<textarea name="textResa"></textarea>
 					</div>
 				</div>
 			</div>
-			<input type="submit" value="Envoyer">
+			<input type="submit" value="Envoyer" name="envoyer">
+            <?php 
+                if(isset($_POST['envoyer'])){
+                    $lastName = htmlspecialchars($_POST['nomReservation']);
+                    $firstName = htmlspecialchars($_POST['prenomReservation']);
+                    $mail = htmlspecialchars($_POST['mailReservation']);
+                    $phone = htmlspecialchars($_POST['phoneReservation']);
+                    $date = htmlspecialchars($_POST['dateEvent']);
+                    $people = htmlspecialchars($_POST['peopleEvent']);
+                    $eventType = htmlspecialchars($_POST['enventType']);
+                    $eventTxt = htmlspecialchars($_POST['textResa']);
+                    
+                }
+            
+            ?>
 		</form>
 	</section>
 </body>
