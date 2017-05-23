@@ -1782,7 +1782,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 /*-----------------------------------------------------------------*/
 
 #co_lEquipe{
-    
+    background-color:#ededed;
 }
 
 #co_lEquipe #co_title{
@@ -1852,7 +1852,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
  
 }
 
-.back .co_top_left_triangle{
+#co_lEquipe .back .co_top_left_triangle{
     z-index:10;
     position:absolute;
     top:-0.5vw;
@@ -1863,7 +1863,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     transform:skew(15deg, 15deg);
 }
 
-.back .co_top_right_triangle{
+#co_lEquipe .back .co_top_right_triangle{
     z-index:10;
     position:absolute;
     top:-0.5vw;
@@ -1874,7 +1874,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     transform:skew(-15deg, -15deg);
 }
 
-.back .co_bottom_right_triangle{
+#co_lEquipe .back .co_bottom_right_triangle{
     z-index:10;
     position:absolute;
     bottom:-0.5vw;
@@ -1885,7 +1885,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     transform:skew(15deg, 15deg);
 }
 
-.back .co_bottom_left_triangle{
+#co_lEquipe .back .co_bottom_left_triangle{
     z-index:10;
     position:absolute;
     bottom:-0.5vw;
@@ -1896,7 +1896,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     transform:skew(-15deg, -15deg);
 }
 
-.back .co_big_bottom_right_triangle{
+#co_lEquipe .back .co_big_bottom_right_triangle{
     position:absolute;
     width:0;
     height:0;
@@ -1909,7 +1909,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     
 }
 
-.back .co_big_top_left_triangle{
+#co_lEquipe .back .co_big_top_left_triangle{
     position:absolute;
     width:0;
     height:0;
@@ -1920,84 +1920,84 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     border-color:transparent #64b7ea #64b7ea transparent;
 }
 
-.back .co_centerBack{
+#co_lEquipe .back .co_centerBack{
     position:absolute;
     display:flex;
     z-index:20;
 }
 
-.back .co_centerBack .co_column1{
+#co_lEquipe .back .co_centerBack .co_column1{
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.back .co_centerBack .co_column2{
+#co_lEquipe .back .co_centerBack .co_column2{
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.back .co_centerBack .co_column3{
+#co_lEquipe .back .co_centerBack .co_column3{
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.back .co_centerBack .co_column1 .co_center_left_triangle{
+#co_lEquipe .back .co_centerBack .co_column1 .co_center_left_triangle{
     border-style: solid;
     border-width:2vw 3vw;
     border-color:transparent #AFD5EC transparent transparent;
 }
 
-.back .co_centerBack .co_column2 .co_center_top_triangle{
+#co_lEquipe .back .co_centerBack .co_column2 .co_center_top_triangle{
     border-style: solid;
     border-width:3vw 2vw;
     border-color:transparent transparent #AFD5EC transparent;
 }
 
-.back .co_centerBack .co_column2 .co_center_square{
+#co_lEquipe .back .co_centerBack .co_column2 .co_center_square{
     height:4vw;
     width:4vw;
     background-color:#AFD5EC;
 }
 
-.back .co_centerBack .co_column2 .co_center_bottom_triangle{
+#co_lEquipe .back .co_centerBack .co_column2 .co_center_bottom_triangle{
     border-style: solid;
     border-width:3vw 2vw;
     border-color:#AFD5EC transparent transparent transparent;
 }
 
-.back .co_centerBack .co_column3 .co_center_right_triangle{
+#co_lEquipe .back .co_centerBack .co_column3 .co_center_right_triangle{
     border-style: solid;
     border-width:2vw 3vw;
     border-color:transparent transparent transparent #AFD5EC;
 }
 
-.back img{
+#co_lEquipe .back img{
     height:4vw;
     z-index: 20;
 }
 
-.front .co_photoContainer{
+#co_lEquipe .front .co_photoContainer{
     width:96%;
     height:50%;
     overflow:hidden;
     margin:2%;
 }
 
-.front .co_photoContainer img{
+#co_lEquipe .front .co_photoContainer img{
     width:100%;
 }
 
 
-.front  p{
-    clear: both;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    width:100%;
+#co_lEquipe .front .co_membreDesc{
+    padding:2%;
+    font-size: 1.5vh;
+    background-color:#ededed;
+    width:96%;
     height:50%;
+    margin:2%;
 }
 
 /*---------------------------- FIN L EQUIPE -----------------------*/
