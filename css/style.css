@@ -1850,7 +1850,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 	color: #FFFFFF;
 }
 
-#s_header {
+#s_header header{
 	display: flex;
 	align-items: center;
 	height: 5vw
@@ -2176,10 +2176,15 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     --------debut evenements--------
     ---------------------------*/
 
-body#s_evenement  
+
+#s_evenement
+{
+      background-color: #EDEDED;
+}
+
+#s_evenement body  
 {  
     width: 100%;
-    background-color: #EDEDED; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2189,7 +2194,7 @@ body#s_evenement
 {
     font-size: 4vw;
     width: 100%;
-    height: 7vw;
+    height: 5vw;
     padding: inherit;
     display: flex;
     justify-content: center;
@@ -2201,9 +2206,10 @@ body#s_evenement
     display: flex;
     margin-top: 4%;
     margin-bottom: 4%;
+    margin-left: 2%;
     justify-content: space-between;
-    height: 30vw;
-    width: 90%;
+    height:30vw;
+    width: 95%;
     padding: 2%;
     background-color: #2C2C2C;
     box-shadow: 1vw 1vw 0vw ;
@@ -2225,6 +2231,7 @@ body#s_evenement
 #s_evenement .image_event
 {
     width: 50%;
+    height: 100%;
     border-bottom: solid;
     border-bottom-width:0.5vw;
     border-color: #B4D87D;
@@ -2263,7 +2270,7 @@ body#s_evenement
  
 #s_evenement .contenue_event
 {
-    font-size: 1vw;
+    font-size: 1.3vw;
     height: 100%;
     width: 100%;
     color: #EDEDED;
@@ -2273,7 +2280,17 @@ body#s_evenement
     
 }
 
-
+#s_evenement .cercle
+{
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    border-radius: 50%;
+    margin-top: -4%;
+    margin-left: -8%;
+    border: solid;
+    border-color: aliceblue;
+}
 
 /*---------------------------
     --------fin evenements--------
