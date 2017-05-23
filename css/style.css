@@ -481,6 +481,151 @@ select {
 
 #a_admin_mail #mailContainer #mailInformations #infosReservationsRight {}
 
+/*-----------------------------------------------------------------*/
+
+
+/*------------------------ADMIN - EVENTS---------------------------*/
+
+
+/*-----------------------------------------------------------------*/
+
+
+/*HEADER ADMIN EVENT*/
+
+#a_admin_evenements header p {
+	font-size: 4vw;
+	text-align: center;
+	margin-top: 5vh;
+}
+
+#a_admin_evenements h1 {
+	font-size: 3vw;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 5vh;
+}
+
+#a_admin_evenements {
+	color: white;
+	background-color: #3D3D3D;
+}
+
+/*ADMIN ARTICLE CONTENU*/
+
+#a_admin_evenements #a_eventModifsContainer {
+	display: flex;
+	width: 80vw;
+	justify-content: center;
+	margin: auto;
+}
+
+#a_admin_evenements #a_eventModifsContainer #addEventContainer {
+	margin-right: 2.5vw;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+#a_admin_evenements #a_eventModifsContainer #addEventContainer form {
+	display: flex;
+	flex-direction: column;
+}
+
+#a_admin_evenements #a_eventModifsContainer #addEventContainer form div {
+	display: flex;
+	justify-content: space-between;
+	padding: 1vh 0;
+}
+
+#a_admin_evenements #a_eventModifsContainer #addEventContainer form textarea {
+	width: 80%;
+	height: 40vh;
+	border: solid 1px white;
+}
+
+#a_admin_evenements #a_eventModifsContainer #addEventContainer form input {
+	border-bottom: solid 1px white;
+}
+
+#a_admin_evenements #a_eventModifsContainer #addEventContainer form input[type=submit] {
+	width: 40%;
+	margin: auto;
+	font-size: 1.5vw;
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 5px;
+	padding: 0.5vh;
+	margin-top: 3vh;
+	color: #3D3D3D;
+}
+
+#a_admin_evenements #a_eventModifsContainer #addEventContainer form input[type=submit]:hover {
+	border: 1px solid white;
+	background-color: #3D3D3D;
+	transition: 0.3s;
+	border-radius: 5px;
+	padding: 0.5vh;
+	color: #AFD5EC;
+}
+
+#a_admin_evenements #a_eventModifsContainer #addEventContainer h2 {
+	text-align: center;
+	padding: 3vh 0;
+}
+
+#a_admin_evenements #a_eventModifsContainer #removeEventContainer {
+	margin-left: 2.5vw;
+	width: 40%;
+	color: white;
+}
+
+#a_admin_evenements #a_eventModifsContainer #removeEventContainer form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#a_admin_evenements #a_eventModifsContainer #removeEventContainer form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#a_admin_evenements #a_eventModifsContainer #removeEventContainer form input[type=submit] {
+	width: 40%;
+	margin: auto;
+	font-size: 1.5vw;
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 5px;
+	padding: 0.5vh;
+	margin-top: 3vh;
+	color: #3D3D3D;
+}
+
+#a_admin_evenements #a_eventModifsContainer #removeEventContainer form input[type=submit]:hover {
+	border: 1px solid white;
+	background-color: #3D3D3D;
+	transition: 0.3s;
+	border-radius: 5px;
+	padding: 0.5vh;
+	color: #AFD5EC;
+}
+
+#a_admin_evenements #a_eventModifsContainer #removeEventContainer h2 {
+	text-align: center;
+	padding: 3vh 0;
+}
+
+#a_admin_evenements #a_eventModifsContainer #addEventContainer textarea {
+	color: white;
+}
+
+#a_admin_evenements #a_eventModifsContainer #addEventContainer select {
+	color: white;
+}
+
 
 /*-----------------------------------------------------------------*/
 
