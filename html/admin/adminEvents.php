@@ -16,7 +16,7 @@
         
         $bdd ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
-        $newEvent = $bdd->prepare("INSERT INTO event(event_title, event_txt, event_place, event_date) VALUES (?, ?, ?, ?)");
+        $newEvent = $bdd->prepare("INSERT INTO event(event_title, event_txt, event_place, event_date, event_img) VALUES (?, ?, ?, ?, ? )");
     
         $events = $bdd->query("SELECT * FROM event WHERE CURRENT_DATE<event_date ORDER BY event_date");
     
@@ -30,7 +30,7 @@
 	<div id="a_eventModifsContainer">
 		<div id="addEventContainer">
 			<h2>Ajouter</h2>
-			<form method="POST" action="">
+			<form method="post" action="" enctype="multipart/form-data">
 				<div>
 					<label for="eventTitle">Titre de l'évenement</label>
 					<input type="text" name="eventTitle"> </div>
@@ -44,9 +44,55 @@
 				<div>
 					<label for="eventDate">Date de l'évenement</label>
 					<input type="date" name="eventDate"> </div>
+                <div>
+                    <label for="eventImg">Image de l'évenement</label>
+                    <input type="file" size="5000" name="eventImg">
+                </div>
 				<input type="submit" value="Ajouter" name="ajouter"> 
                 <?php
                     if(isset($_POST['ajouter'])){
+                        
+                        $erreur="";
+                        /* Traitement de l'image */
+                        if ($_FILES['eventImg']['error'] > 0){ 
+                            $erreur .= "Erreur lors du transfert"."<br/>";
+                        }
+                        /* On teste la taille du fichier */
+                        if ($_FILES['eventImg']['size'] > 5000) {
+                            $erreur .= "Le fichier est trop volumineux"."<br/>";
+                        }
+                        /* On teste son extension */
+                        $extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );
+                        $extension_upload = strtolower(  substr(  strrchr($_FILES['eventImg']['name'], '.')  ,1)  );
+                        if ( !in_array($extension_upload,$extensions_valides) ) {
+                            $erreur .= "Extension Incorrecte"."<br/>";
+                        }
+                            /* Si un fichier est spécifié dans le formulaire */
+                        if (isset($_FILES["eventImg"]["name"]) ) { 
+                            
+                            $name = $_FILES["eventImg"]["name"]; 
+                            $tmp_name = $_FILES['eventImg']['tmp_name'];
+                            $error = $_FILES['eventImg']['error'];
+
+                            if (!empty($name)) {
+                                $location = '../../images/';
+
+                                if  (move_uploaded_file($tmp_name, $location.$name)){
+                                    echo 'Uploaded';
+                                }else{
+                                    echo 'Upload failed';
+                                    echo $erreur;
+                                }
+
+                            } else {
+                                echo 'Please, select a file';
+                            }
+                        }
+                        else {
+                            echo $erreur;
+                        }
+                        
+                        $pathImage = $location.$name;
                         $eventTitle = htmlspecialchars($_POST['eventTitle']);
                         $eventTxt = htmlspecialchars($_POST['eventTxt']);
                         $eventPlace = htmlspecialchars($_POST['eventPlace']);
@@ -56,6 +102,8 @@
                         $newEvent->bindParam('2', $eventTxt);
                         $newEvent->bindParam('3', $eventPlace);
                         $newEvent->bindParam('4', $eventDate);
+                        $newEvent->bindParam('5', $pathImage);
+                        
                         $newEvent->execute();
                     }
                 ?>

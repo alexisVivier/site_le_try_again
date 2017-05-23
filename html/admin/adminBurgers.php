@@ -28,7 +28,7 @@
         /* On récup l'id associé */
         $newIngredientId = $bdd->prepare("SELECT ingredient_id FROM ingredient WHERE salad = ? AND tomatoes = ? AND onions = ? AND pickles = ?");
         /* Enfin on Crée ce nouveau burger qui sera sélectionnable plus tard */
-        $newBurger = $bdd->prepare("INSERT INTO burger(burger_name, ingredient_id, meat_id, cheese_id, sauce_id) VALUES (?, ?, ?, ?, ?)");
+        $newBurger = $bdd->prepare("INSERT INTO burger(burger_name, ingredient_id, meat_id, cheese_id, sauce_id, burger_image) VALUES (?, ?, ?, ?, ?, ?)");
         /*---------Fin gestion ajout burger--------*/
         
         /*---------Gestion suppression burger--------*/
@@ -45,7 +45,7 @@
     <div id="a_burgersModifsContainer">
         <div id="a_burgersModifsAdd">
             <h2>Ajouter</h2>
-            <form action="" method="POST">
+            <form action="" method="POST" enctype="multipart/form-data">
                 <div>
                     <label for="burgerName">Nom du burger</label>
                     <input type="text" name="burgerName" /> </div>
@@ -99,11 +99,57 @@
 						
 				</select>
                 </div>
+                <div>
+                    <label for="eventImg">Image de l'évenement</label>
+                    <input type="file" size="5000" name="eventImg">
+                </div>
 
                 <input type="submit" name="ajouter" value="Ajouter">
                 <?php 
                 if(isset($_POST['ajouter'])){
                 /*On traite toutes les données du FORM*/
+                    
+                $erreur="";
+                        /* Traitement de l'image */
+                        if ($_FILES['eventImg']['error'] > 0){ 
+                            $erreur .= "Erreur lors du transfert"."<br/>";
+                        }
+                        /* On teste la taille du fichier */
+                        if ($_FILES['eventImg']['size'] > 5000) {
+                            $erreur .= "Le fichier est trop volumineux"."<br/>";
+                        }
+                        /* On teste son extension */
+                        $extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );
+                        $extension_upload = strtolower(  substr(  strrchr($_FILES['eventImg']['name'], '.')  ,1)  );
+                        if ( !in_array($extension_upload,$extensions_valides) ) {
+                            $erreur .= "Extension Incorrecte"."<br/>";
+                        }
+                            /* Si un fichier est spécifié dans le formulaire */
+                        if (isset($_FILES["eventImg"]["name"]) ) { 
+                            
+                            $name = $_FILES["eventImg"]["name"]; 
+                            $tmp_name = $_FILES['eventImg']['tmp_name'];
+                            $error = $_FILES['eventImg']['error'];
+
+                            if (!empty($name)) {
+                                $location = '../../images/';
+
+                                if  (move_uploaded_file($tmp_name, $location.$name)){
+                                    echo 'Uploaded';
+                                }else{
+                                    echo 'Upload failed';
+                                    echo $erreur;
+                                }
+
+                            } else {
+                                echo 'Please, select a file';
+                            }
+                        }
+                        else {
+                            echo $erreur;
+                        }
+                        
+                $pathImage = $location.$name;
                 $burgerName = htmlspecialchars($_POST['burgerName']);
                 $newMeatName = htmlspecialchars($_POST['typeViandeAddSelection']);
                 $salad=htmlspecialchars($_POST['ingredientsAddSalad']);
@@ -120,6 +166,7 @@
                 $newMeatId->bindParam('1', $newMeatName);
                 $newMeatId->execute();
                 $meatId = $newMeatId->fetch();
+                    
                 /* On recup l'id quatuor d'ingrédients et l'id après les avoir insérés */
                 $ingredients->bindParam('1', $salad);
                 $ingredients->bindParam('2', $tomatoes);
@@ -127,6 +174,7 @@
                 $ingredients->bindParam('4', $pickles);
                 $ingredients->execute();
                 
+                /* On envoie les ingrédients séléctionnés */
                 $newIngredientId->bindParam('1', $salad);
                 $newIngredientId->bindParam('2', $tomatoes);
                 $newIngredientId->bindParam('3', $onions);
@@ -140,6 +188,7 @@
                 $newBurger->bindParam('3', $meatId['0']);
                 $newBurger->bindParam('4', $cheese);
                 $newBurger->bindParam('5', $sauce);
+                $newBurger->bindParam('6', $pathImage);
                 $newBurger->execute();
                 }
         ?>

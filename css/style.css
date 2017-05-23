@@ -80,6 +80,7 @@ a {
 	border: solid 1px white;
 	text-align: center;
 	padding: 8vh 0;
+	color: white;
 }
 
 #a_admin_hub #a_title_admin_hub {
@@ -109,6 +110,23 @@ a {
 	background-color: white;
 	transition-duration: 0.5s;
 	border: solid 1px white;
+	color: black;
+}
+
+#a_admin_hub #a_boutons_container a:hover path {
+	fill: black;
+}
+
+#a_admin_hub #a_boutons_container a:hover g {
+	fill: black;
+}
+
+#a_admin_hub #a_boutons_container a:hover rect {
+	fill: black;
+}
+
+#a_admin_hub #a_boutons_container a:hover circle {
+	fill: black;
 }
 
 #a_admin_hub #a_boutons_container h2 {
@@ -125,9 +143,28 @@ a {
 	height: 48px;
 }
 
+#a_admin_hub #a_boutons_container #a_article_div svg, path, rect, g{
+/*	stroke: white;*/
+	fill: white;
+}
+
 #a_admin_hub #a_boutons_container #a_reponses_div svg {
 	width: 40px;
 	height: 40px;
+}
+
+#a_admin_hub #a_boutons_container svg, path, rect, g{
+/*	stroke: white;*/
+	fill: white;
+}
+
+#a_admin_hub #a_boutons_container #a_events_div svg {
+	width: 50px;
+	height: 50px;
+}
+
+#a_admin_hub a {
+	margin: 0 1vw;
 }
 
 
