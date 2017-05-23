@@ -1209,6 +1209,153 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul{
 
 
 /*---------------------------- FIN A PROPOS -----------------------*/
+
+/*-----------------------------------------------------------------*/
+/*---------------------------NOUS RETROUER ------------------------*/
+/*-----------------------------------------------------------------*/
+
+#co_nousRetrouver{
+    background-color: #2c2c2c;
+    color:white;
+}
+#co_nousRetrouver h1{
+    padding:20px;
+    text-align: center;
+    font-size:5vw;
+} 
+
+#co_nousRetrouver #co_dayCardsBlock{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2vw;
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard{
+    position:relative;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width:25vw;
+    margin:3vw 3vw 5vw 3vw;
+    padding:2%;
+    background-color:white;
+    color:#2c2c2c;
+    transition-property: transform, background-color;
+    transition-duration: 0.2s;
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard:nth-child(2n+1):hover {
+    cursor: pointer;
+    transform: rotate(-10deg);
+}
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard:nth-child(2n):hover {
+    cursor: pointer;
+    transform: rotate(10deg);
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard .co_day{
+    position:absolute;
+    top:-38%;
+    width:60%;
+    padding:7% 0;
+    text-align:center;
+    background-color:#afd5ec;
+    font-size:1.7vw;
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_locationsBlock{
+    width:100%;
+    height:100%;
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard p{
+    padding:3% 0;
+    width:100%;
+    font-size:1.7vw;
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard .co_separatedLine{
+    height:0.2vw;
+    background-color:#2c2c2c
+}
+
+#co_nousRetrouver #co_map{
+    width:100%;
+    height:50vw;
+}
+
+/*------------------------- FIN NOUS RETROUVER --------------------*/
+
+/*-----------------------------------------------------------------*/
+/*---------------------------- L EQUIPE ---------------------------*/
+/*-----------------------------------------------------------------*/
+
+#co_lEquipe{
+    
+}
+
+#co_lEquipe #co_title{
+    width:100vw;
+    position:relative;
+}
+
+#co_lEquipe h1{
+    position:absolute;
+    width:100vw;
+    font-size:5vw;
+    text-align: center;
+    top:calc(50% - 5vw);
+    color:white;
+}
+#co_lEquipe #co_title img{
+    width:100vw;
+    filter:brightness(0.2);
+    
+}
+
+#co_lEquipe #co_blockCards{
+    display:flex;
+    justify-content:space-around;
+    padding:10vw 0;
+}
+
+/* Container de la carte, garde la bonne perspective lors du retournement */
+.flip-container {perspective: 1000px;}
+
+/* Tourne la carte lors du passage de la souris */
+.flip-container:hover .flipper, .flip-container.hover .flipper {transform: rotateY(180deg);}
+
+/* Définition de la hauteur / largeur de la carte (toute la carte, puis chaque côté) */
+.flip-container, .front, .back {width: 100%;height: 29vw; margin: 0 2%}
+
+/* Vitesse de l'animation */
+.flipper {transition: 1s;transform-style: preserve-3d;position: relative;}
+
+/* On cache l'autre côté lors du retournement */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    border-color: #474747;
+    border-width:10px;
+    border-style:solid;
+}
+
+/* Face de devant, initiallement au dessus */
+.front {
+    z-index: 2;/* Pour firefox 31 */
+    transform: rotateY(180deg);background-color: #272727;
+}
+
+/* Face arrière, initiallement cachée */
+.back {
+    transform: rotateY(0deg);
+    background-color: #272727; 
+}
+/*---------------------------- FIN L EQUIPE -----------------------*/
 /* Fin Corentin */
 
 
