@@ -1123,7 +1123,7 @@ section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_svgBurgerBlock
 }
 
 section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_burgerInformationsBlock {
-	height: 50%;
+	height: 40%;
 	background-color: white;
 	color: #2c2c2c;
 	display: flex;
@@ -1146,8 +1146,8 @@ section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_burgerInformat
 	font-size: 1.8vw;
 }
 
-section#co_burgersBlock article.co_burgerBlock svg {
-	width: 70%;
+section#co_burgersBlock article.co_burgerBlock img {
+	width: 80%;
 }
 
 section#co_frites {
