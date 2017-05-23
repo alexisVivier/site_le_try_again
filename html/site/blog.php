@@ -25,8 +25,6 @@ catch (PDOException $e) {
         $articles = $bdd->query("SELECT * FROM article");
         while ($article= $articles->fetch()) { 
             print_r("
-            
-                
                     <article class='co_article' id='".$article['article_id']."'>
                         <h2>".$article['article_title']."</h2>
                         <a href='article.php?id=".$article['article_id']."' class='co_imageContainer'>
@@ -44,8 +42,6 @@ catch (PDOException $e) {
                             
                         </div>
                     </article>
-                
-         
                 "); }; ?>
         </section>
         <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
