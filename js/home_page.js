@@ -8,6 +8,10 @@ $('#fleche').click(function()
     }, 'slow');
 });
 
+ $("#slider").slick({
+        infinite : false
+  });
+
 $('.autoplay').slick({
   slidesToShow: 1,
   slidesToScroll: 1,

@@ -2167,6 +2167,11 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     --------début homepage--------
     ---------------------------*/
 
+body 
+{
+    
+}
+
 #s_homepage #image_et_slogan img
     {
         width:  100%;
@@ -2226,6 +2231,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
         justify-content: space-around; 
         height: 20vw;
         width: 100%;
+        padding-top: 1%;
     }
     
      #s_homepage .principe
@@ -2292,6 +2298,8 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     {
     display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     width: 50%;
     height: auto;
@@ -2300,6 +2308,13 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     margin: auto;
     }
 
+    #s_homepage .image_dans_cercle
+    {
+        width: 50%;
+        height: 50%;
+        margin-top: -100%;
+    }
+    
     #s_homepage .type
     {
         font-size: 2vw;
