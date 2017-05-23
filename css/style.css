@@ -688,7 +688,6 @@ form {
 	width: 18vw;
 }
 
-
 /*Titre type evenement*/
 
 #eventTypeTitle {
@@ -716,7 +715,7 @@ form {
 	justify-content: space-around;
 	flex-direction: column;
 	height: 80%;
-	font-size: 0.9vw;
+	font-size: 1vw;
 }
 
 #eventTypeForm checkbox {
