@@ -1,19 +1,21 @@
-
-   <?php include 'header.php';?>
+<!DOCTYPE html>
+<html>
 
     <head>
         <meta charset="utf-8"/>
         <title> HomePage</title>
         
         <!-- SLICK   -->
-        <link rel="stylesheet" type="text/css" href="../../slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
         
-         <link href="../../css/style.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
          <link href="https://fonts.googleapis.com/css?family=Lobster|Muli" rel="stylesheet"> 
          
     </head>
     <body id="s_homepage">
+        
+   <?php include 'header.php';?>
     <div id="image_et_slogan">
         <div class="autoplay">
            <img src="../../images/foodTruck.jpg" class="autoplay" href="header.html" title="foodtruck" alt="foodtruck" id="food_truck" />
@@ -248,6 +250,7 @@
     
         </div>
     </div>
+            <?php include 'footer.php';?>
              <script
 			  src="https://code.jquery.com/jquery-3.2.1.min.js"
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -256,7 +259,7 @@
             <script type="text/javascript" src="../../slick/slick.min.js"></script>
     </body>
    
-         <?php include 'footer.php';?>
+         
         
 </html>
           <script src="../../js/home_page.js"> </script>
