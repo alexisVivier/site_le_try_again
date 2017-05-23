@@ -1664,7 +1664,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 
 
 /*-----------------------------------------------------------------*/
-/*---------------------------NOUS RETROUER ------------------------*/
+/*---------------------------NOUS RETROUVER ------------------------*/
 /*-----------------------------------------------------------------*/
 
 #co_nousRetrouver{
@@ -1774,40 +1774,195 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 }
 
 /* Container de la carte, garde la bonne perspective lors du retournement */
-.flip-container {perspective: 1000px;}
+#co_lEquipe .flip-container {perspective: 1000px;}
 
 /* Tourne la carte lors du passage de la souris */
-.flip-container:hover .flipper, .flip-container.hover .flipper {transform: rotateY(180deg);}
+#co_lEquipe .flip-container:hover .flipper, .flip-container.hover .flipper {transform: rotateY(180deg);}
 
 /* Définition de la hauteur / largeur de la carte (toute la carte, puis chaque côté) */
-.flip-container, .front, .back {width: 100%;height: 29vw; margin: 0 2%}
+#co_lEquipe .flip-container, .front, .back {width: 100%;height: 29vw; margin: 0 2%}
 
 /* Vitesse de l'animation */
-.flipper {transition: 1s;transform-style: preserve-3d;position: relative;}
+#co_lEquipe .flipper {transition: 1s;transform-style: preserve-3d;position: relative;}
 
 /* On cache l'autre côté lors du retournement */
-.front, .back {
+#co_lEquipe .front, #co_lEquipe .back {
     backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
     border-radius: 8px;
-    border-color: #474747;
-    border-width:10px;
+    border-color: #AFD5EC;
+    border-width:1vw;
     border-style:solid;
+    background-color: #272727;
 }
 
 /* Face de devant, initiallement au dessus */
-.front {
+#co_lEquipe .front {
     z-index: 2;/* Pour firefox 31 */
-    transform: rotateY(180deg);background-color: #272727;
+    transform: rotateY(180deg);
+    display:flex;
+    flex-direction: column;
 }
 
 /* Face arrière, initiallement cachée */
-.back {
+#co_lEquipe .back {
     transform: rotateY(0deg);
-    background-color: #272727; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+ 
 }
+
+.back .co_top_left_triangle{
+    z-index:10;
+    position:absolute;
+    top:-0.5vw;
+    left:-0.5vw;
+    height:2.5vw;
+    width:2.5vw;
+    background-color:#AFD5EC;
+    transform:skew(15deg, 15deg);
+}
+
+.back .co_top_right_triangle{
+    z-index:10;
+    position:absolute;
+    top:-0.5vw;
+    right:-0.5vw;
+    height:2.5vw;
+    width:2.5vw;
+    background-color:#AFD5EC;
+    transform:skew(-15deg, -15deg);
+}
+
+.back .co_bottom_right_triangle{
+    z-index:10;
+    position:absolute;
+    bottom:-0.5vw;
+    right:-0.5vw;
+    height:2.5vw;
+    width:2.5vw;
+    background-color:#AFD5EC;
+    transform:skew(15deg, 15deg);
+}
+
+.back .co_bottom_left_triangle{
+    z-index:10;
+    position:absolute;
+    bottom:-0.5vw;
+    left:-0.5vw;
+    height:2.5vw;
+    width:2.5vw;
+    background-color:#AFD5EC;
+    transform:skew(-15deg, -15deg);
+}
+
+.back .co_big_bottom_right_triangle{
+    position:absolute;
+    width:0;
+    height:0;
+    border-style: solid;
+    border-width:6vw 6vw;
+    border-color:#64b7ea transparent transparent #64b7ea;
+/*    transform: rotate(45deg);*/
+    top:0;
+    left:0;
+    
+}
+
+.back .co_big_top_left_triangle{
+    position:absolute;
+    width:0;
+    height:0;
+    bottom:0;
+    right:0;
+    border-style: solid;
+    border-width:6vw 6vw;
+    border-color:transparent #64b7ea #64b7ea transparent;
+}
+
+.back .co_centerBack{
+    position:absolute;
+    display:flex;
+    z-index:20;
+}
+
+.back .co_centerBack .co_column1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.back .co_centerBack .co_column2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.back .co_centerBack .co_column3{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.back .co_centerBack .co_column1 .co_center_left_triangle{
+    border-style: solid;
+    border-width:2vw 3vw;
+    border-color:transparent #AFD5EC transparent transparent;
+}
+
+.back .co_centerBack .co_column2 .co_center_top_triangle{
+    border-style: solid;
+    border-width:3vw 2vw;
+    border-color:transparent transparent #AFD5EC transparent;
+}
+
+.back .co_centerBack .co_column2 .co_center_square{
+    height:4vw;
+    width:4vw;
+    background-color:#AFD5EC;
+}
+
+.back .co_centerBack .co_column2 .co_center_bottom_triangle{
+    border-style: solid;
+    border-width:3vw 2vw;
+    border-color:#AFD5EC transparent transparent transparent;
+}
+
+.back .co_centerBack .co_column3 .co_center_right_triangle{
+    border-style: solid;
+    border-width:2vw 3vw;
+    border-color:transparent transparent transparent #AFD5EC;
+}
+
+.back img{
+    height:4vw;
+    z-index: 20;
+}
+
+.front .co_photoContainer{
+    width:96%;
+    height:50%;
+    overflow:hidden;
+    margin:2%;
+}
+
+.front .co_photoContainer img{
+    width:100%;
+}
+
+
+.front  p{
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width:100%;
+    height:50%;
+}
+
 /*---------------------------- FIN L EQUIPE -----------------------*/
 
 /* Fin Corentin */
