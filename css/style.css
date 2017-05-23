@@ -2202,14 +2202,15 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 
     #s_homepage .svg
     {
-        width: 40%;  
+        width: 40%;
+        height: 100%;
         margin-left: 30%;
         margin-bottom: 5%;
     }
 
     #s_homepage .front
     {
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         text-align: center;
     }
 
@@ -2563,6 +2564,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 
 #s_evenement  .event
 {
+    position:relative;
     width: 50%; 
     height: 100%; 
     display: flex;
@@ -2601,6 +2603,18 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
     text-align:center;
     padding-top: 4%;
     
+}
+
+#s_evenement .infos{
+    display:flex;
+    color:white;
+    margin:2%;
+    justify-content: space-between;
+    font-size:1.3vw;
+    width:90%;
+    position:absolute;
+    bottom:-9%;
+    right:2%;
 }
 /*
 #s_evenement .cercle
