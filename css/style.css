@@ -1,7 +1,7 @@
 /*Pour tout le monde*/
 
 @import url('https://fonts.googleapis.com/css?family=Lobster%7CMuli');
-<<<<<<< HEAD html {
+html {
 	width: 100%;
 	height: 100%;
 }
@@ -14,7 +14,7 @@ body {
 	@import url('https://fonts.googleapis.com/css?family=Lobster|Muli');
 }
 
-=======>>>>>>> 1b027505af5ab1382d01fd87a13bff4183da9377 html {
+html {
 	margin: 0;
 	padding: 0px;
 }
@@ -1123,7 +1123,7 @@ section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_svgBurgerBlock
 }
 
 section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_burgerInformationsBlock {
-	height: 50%;
+	height: 40%;
 	background-color: white;
 	color: #2c2c2c;
 	display: flex;
@@ -1146,8 +1146,8 @@ section#co_burgersBlock article.co_burgerBlock .co_burgerCard .co_burgerInformat
 	font-size: 1.8vw;
 }
 
-section#co_burgersBlock article.co_burgerBlock svg {
-	width: 70%;
+section#co_burgersBlock article.co_burgerBlock img {
+	width: 80%;
 }
 
 section#co_frites {
@@ -1663,6 +1663,153 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 /*---------------------------- FIN A PROPOS -----------------------*/
 
 
+/*-----------------------------------------------------------------*/
+/*---------------------------NOUS RETROUER ------------------------*/
+/*-----------------------------------------------------------------*/
+
+#co_nousRetrouver{
+    background-color: #2c2c2c;
+    color:white;
+}
+#co_nousRetrouver h1{
+    padding:20px;
+    text-align: center;
+    font-size:5vw;
+} 
+
+#co_nousRetrouver #co_dayCardsBlock{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2vw;
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard{
+    position:relative;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width:25vw;
+    margin:3vw 3vw 5vw 3vw;
+    padding:2%;
+    background-color:white;
+    color:#2c2c2c;
+    transition-property: transform, background-color;
+    transition-duration: 0.2s;
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard:nth-child(2n+1):hover {
+    cursor: pointer;
+    transform: rotate(-10deg);
+}
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard:nth-child(2n):hover {
+    cursor: pointer;
+    transform: rotate(10deg);
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard .co_day{
+    position:absolute;
+    top:-38%;
+    width:60%;
+    padding:7% 0;
+    text-align:center;
+    background-color:#afd5ec;
+    font-size:1.7vw;
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_locationsBlock{
+    width:100%;
+    height:100%;
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard p{
+    padding:3% 0;
+    width:100%;
+    font-size:1.7vw;
+}
+
+#co_nousRetrouver #co_dayCardsBlock .co_dayCard .co_separatedLine{
+    height:0.2vw;
+    background-color:#2c2c2c
+}
+
+#co_nousRetrouver #co_map{
+    width:100%;
+    height:50vw;
+}
+
+/*------------------------- FIN NOUS RETROUVER --------------------*/
+
+/*-----------------------------------------------------------------*/
+/*---------------------------- L EQUIPE ---------------------------*/
+/*-----------------------------------------------------------------*/
+
+#co_lEquipe{
+    
+}
+
+#co_lEquipe #co_title{
+    width:100vw;
+    position:relative;
+}
+
+#co_lEquipe h1{
+    position:absolute;
+    width:100vw;
+    font-size:5vw;
+    text-align: center;
+    top:calc(50% - 5vw);
+    color:white;
+}
+#co_lEquipe #co_title img{
+    width:100vw;
+    filter:brightness(0.2);
+    
+}
+
+#co_lEquipe #co_blockCards{
+    display:flex;
+    justify-content:space-around;
+    padding:10vw 0;
+}
+
+/* Container de la carte, garde la bonne perspective lors du retournement */
+.flip-container {perspective: 1000px;}
+
+/* Tourne la carte lors du passage de la souris */
+.flip-container:hover .flipper, .flip-container.hover .flipper {transform: rotateY(180deg);}
+
+/* Définition de la hauteur / largeur de la carte (toute la carte, puis chaque côté) */
+.flip-container, .front, .back {width: 100%;height: 29vw; margin: 0 2%}
+
+/* Vitesse de l'animation */
+.flipper {transition: 1s;transform-style: preserve-3d;position: relative;}
+
+/* On cache l'autre côté lors du retournement */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    border-color: #474747;
+    border-width:10px;
+    border-style:solid;
+}
+
+/* Face de devant, initiallement au dessus */
+.front {
+    z-index: 2;/* Pour firefox 31 */
+    transform: rotateY(180deg);background-color: #272727;
+}
+
+/* Face arrière, initiallement cachée */
+.back {
+    transform: rotateY(0deg);
+    background-color: #272727; 
+}
+/*---------------------------- FIN L EQUIPE -----------------------*/
+
 /* Fin Corentin */
 
 
@@ -1817,6 +1964,11 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 #s_footer .nav_footer:hover {
 	color: #AFD5EC;
 }
+
+
+/*---------------------------
+    --------fin footer--------
+    ---------------------------*/
 
 
 /*---------------------------
@@ -2021,8 +2173,112 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 
 
 /*---------------------------
-    --------fin footer--------
+    --------debut evenements--------
     ---------------------------*/
+
+body#s_evenement  
+{  
+    width: 100%;
+    background-color: #EDEDED; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#s_evenement #titre
+{
+    font-size: 4vw;
+    width: 100%;
+    height: 7vw;
+    padding: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+
+#s_evenement .un_evenement
+{
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    justify-content: space-between;
+    height: 30vw;
+    width: 90%;
+    padding: 2%;
+    background-color: #2C2C2C;
+    box-shadow: 1vw 1vw 0vw ;
+ /*   overflow: hidden;*/
+}
+
+#s_evenement .un_evenement:nth-child(2n+1) .image_event{
+    order:2;
+}
+
+#s_evenement .image_event img
+{
+    width:  100%;
+    height: 100%;
+    
+}
+
+
+#s_evenement .image_event
+{
+    width: 50%;
+    border-bottom: solid;
+    border-bottom-width:0.5vw;
+    border-color: #B4D87D;
+}
+
+
+#s_evenement  .event
+{
+    width: 50%; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color: #2C2C2C;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+
+#s_evenement .event_nom
+{
+    font-size: 2vw;
+    color: #EDEDED;
+    padding-right: 5%;
+     padding-left: 5%;
+}
+
+#s_evenement .event_nom2
+{
+    font-size: 2vw;
+     color: #EDEDED;
+    padding-right: 5%;
+     padding-left: 5%;
+}
+ 
+#s_evenement .contenue_event
+{
+    font-size: 1vw;
+    height: 100%;
+    width: 100%;
+    color: #EDEDED;
+    border-radius: 5%;
+    text-align:center;
+    padding-top: 4%;
+    
+}
+
+
+
+/*---------------------------
+    --------fin evenements--------
+    ---------------------------*/
+
 
 
 /* Fin Samory */
