@@ -2,11 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title> HomePage</title>
+        <title> HomePage </title>
          <link href="../../css/style.css" rel="stylesheet">
          <link href="https://fonts.googleapis.com/css?family=Lobster|Muli" rel="stylesheet"> 
            <link rel="stylesheet" type="text/css" href="../../slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css"/>
+    <?php Try {
+	$bdd = new PDO('mysql:host=localhost;dbname=tryagain;charset=utf8', 'root', '');
+    $bdd ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $e) {
+        die('Erreur : ' . $e->getMessage());
+}  
+        $burgers = $bdd->query("SELECT b.burger_name,b.burger_image, m.meat_name FROM burger b JOIN meat m ON (b.meat_id = m.meat_id)");
+        ?>
     </head>
     <body id="s_homepage">
     <div id="image_et_slogan">
@@ -15,7 +24,7 @@
             <img src="../../images/foodTruck.jpg"  href="header.html" title="foodtruck" alt="foodtruck" id="food_truck2" />
             <img src="../../images/foodTruck.jpg"  href="header.html" title="foodtruck" alt="foodtruck" id="food_truck3" />
         </div>
-         <p id="texte_sur_image"> Slogan par dessus cette image </p>
+         <p id="texte_sur_image"> Le jeu vidéal, une passion. </p>
          <svg id="fleche"  viewBox="0 0 100 125"><g><path d="M96.2,20.9c1-1,1.5-2.2,1.5-3.6s-0.5-2.6-1.5-3.6c-1-1-2.2-1.5-3.6-1.5S90,12.8,89,13.7L50.2,52.6L11.4,13.7   c-1-1-2.2-1.5-3.6-1.5s-2.6,0.5-3.6,1.5c-1,1-1.5,2.2-1.5,3.5c0,1.2,0.5,2.5,1.4,3.5l46,46L96.2,20.9z"/><path d="M96.2,41.9c1-1,1.5-2.2,1.5-3.6s-0.5-2.6-1.5-3.6c-1-1-2.2-1.5-3.6-1.5S90,33.8,89,34.7L50.2,73.6L11.4,34.7   c-1-1-2.2-1.5-3.6-1.5s-2.6,0.5-3.6,1.5c-1,1-1.5,2.2-1.5,3.5c0,1.2,0.5,2.5,1.4,3.5l46,46L96.2,41.9z"/></g></svg>
     </div>
     <div id="nos_principes">
@@ -54,7 +63,7 @@
 		/>
             </svg>
             
-        <p class="front"> Nous,on aime bien la qualité. Avec nos burgers maison, et nos viandes issus d'agriculteur du coin, vous serez séduit par le goût de notre cuisine.</p>
+        <p class="front"> Nous, on aime la qualité. Avec nos burgers maison, et nos viandes issues d'agriculteurs locaux, vous serez séduis par le goût de notre cuisine.</p>
         </div>
         <div class="principe">
             <svg class="svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -100,7 +109,7 @@
 		c26.141,3.547,82.654,30.89,94.324,96.56c5.875,33.062-3.594,68.951-16.779,73.951c2.547,0.375,5.062,0.594,7.531,0.594
 		C350.503,224.848,361.987,185.928,355.659,150.303z"/>
         </svg>
-        <p class="front"> Enlever votre pression journalière et venez à notre Food-truck pour retrouver la bonne humeur! Vous verrez on est sympas ;).</p>
+        <p class="front">Relâchez votre pression journalière et venez à notre Food-truck pour retrouver la bonne humeur ! Vous verrez on est cool !</p>
         
      </div>
     <div class="principe"> 
@@ -131,61 +140,28 @@
 		s9.489,4.248,9.489,9.489C346.51,313.365,324.08,335.795,296.511,335.795z"/>
    </svg>
             
-    <p class="front"> Un sujet qui nous touche particulièrement? Parler nous de jeux vidéo et on sera ravis! On adore ce genre de divertissement. </p>    
+    <p class="front"> Un sujet qui nous touche particulièrement ? Les jeux vidéos ! Venez discuter des dernières sorties, vous coups de coeur, autour d'un de nos burgers.</p>    
     </div>
     </div>
     </div>
     <div id="nos_burgers">
         <div class="titre">  
-            <p> Nos Burgers</p>    
+            <p>Nos Burgers</p>    
         </div>
         <div id="les_burgers" > 
-            <div class="burger">
-                <div class="circle">
-                      <img src="../../images/leTypeNormal.png"  href="header.html" title="foodtruck" alt="foodtruck" class="image_dans_cercle" />
-                </div>
-                <p class="type"> Le Type Normal</p>
-                <p class="specialite"> Boeuf</p>
-                </div>
-            
-            <div class="burger">
-                <div class="circle">
-                    <img src="../../images/leTypeDragon.png"  href="header.html" title="foodtruck" alt="foodtruck" class="image_dans_cercle" />
-                    <img alt="" href="" title="" />
-                </div>
-                <p class="type"> Le Type Dragon</p>
-                <p class="specialite"> Boeuf Bacon </p>
-                </div>
-            
-            <div class="burger">
-                <div class="circle">
-                    <img src="../../images/leTypeVol.png"  href="header.html" title="foodtruck" alt="foodtruck" class="image_dans_cercle" />
-                    <img alt="" href="" title="" />
-                </div>
-                <p class="type">Le Type Vol</p>
-                <p class="specialite"> Poulet</p>
-                </div>
-            
-            <div class="burger">
-                <div class="circle">
-                    <img src="../../images/leTypeFeuille.png"  href="header.html" title="foodtruck" alt="foodtruck" class="image_dans_cercle" />
-                    <img alt="" href="" title="" />
-                </div>
-                <p class="type"> Le Type Feuille</p>
-                <p class="specialite"> Vegan</p>
-                </div>
-            
-            <div class="burger">
-                <div class="circle">
-                    <img src="../../images/leTypeRoche.png"  href="header.html" title="foodtruck" alt="foodtruck" class="image_dans_cercle" />
-                    <img alt="" href="" title="" />
-                </div>
-                <p class="type"> Le Type Roche</p>
-                <p class="specialite"> Montagnard</p>
-                </div>
-            </div>
-        </div>
-    
+            <?php
+            while($burger = $burgers->fetch()){
+                print_r("
+                    <div class='burger'>
+                        <div class='circle'>
+                            <img src='".$burger['burger_image']."'  href='header.html' title='foodtruck' alt='foodtruck'
+                            class='image_dans_cercle' />
+                        </div>
+                        <p class='type'>".$burger['burger_name']."</p>
+                        <p class='specialite'>".$burger['meat_name']."</p>
+                    </div>
+                ");};
+    ?>
         </div>
     <div id="reservez_nos_services">
         <div id="fond1"> </div>
@@ -253,6 +229,7 @@
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
          <script type="text/javascript" src="../../slick/slick.min.js"></script>
+         <script src="../../js/home_page.js"> </script>
     </body>
 </html>
-      <script src="../../js/home_page.js"> </script>
+    
