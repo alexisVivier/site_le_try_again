@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/php/footer.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/php/header.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/php/home_page.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
