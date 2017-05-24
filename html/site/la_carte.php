@@ -62,51 +62,53 @@ catch (PDOException $e) {
         <section id="co_burgers">
             <h2>Nos Burgers</h2>
             <section id="co_burgersBlock">
-                <?php
+            <?php
                  while($burger = $burgers->fetch()){
-                /* Nos ingrédients en bdd sont des booléens, il faut donc leur donner une valeur avant de les afficher */
-                if($burger['salad'] == 1 ){
-                    $salad = 'Salade';
-                }else{
-                    $salad = 'Sans salade';
-                };
-                if($burger['tomatoes'] == 1 ){
-                    $tomatoes = 'Tomates';
-                }else{
-                    $tomatoes = 'Sans tomates';
-                };
-                if($burger['onions'] == 1 ){
-                    $onions = 'Oignons';
-                }else{
-                    $onions = 'Sans oignons';
-                };
-                if($burger['pickles'] == 1 ){
-                    $pickles = 'Cornichons';
-                }else{
-                    $pickles = ' ';
-                };
-                
-                        print_r("
-                <article class='co_burgerBlock'>
-                    <h3>".$burger['burger_name']."</h3>
-                    <div class='co_burgerCard'>
-                        <div class='co_svgBurgerBlock'>
-                            <img src='".$burger['burger_image']."'/>
-                        </div>
-                        <div class='co_burgerInformationsBlock'>
-                            <p>".$burger['meat_name']."</p>
-                            <ul class='co_burgerIngredients'>
-                                <li><p>".$burger['cheese_name']."</p></li>
-                                <li><p>".$burger['sauce_name']."</p></li>
-                                <li><p>".$salad."</p></li>
-                                <li><p>".$tomatoes."</p></li>
-                                <li><p>".$onions."</p></li>
-                                <li><p>".$pickles."</p></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </article>
-                ");}; ?>
+                    /* Nos ingrédients en bdd sont des booléens, il faut donc leur donner une valeur avant de les afficher */
+                    if($burger['salad'] == 1 ){
+                        $salad = 'Salade';
+                    }else{
+                        $salad = 'Sans salade';
+                    };
+                    if($burger['tomatoes'] == 1 ){
+                        $tomatoes = 'Tomates';
+                    }else{
+                        $tomatoes = 'Sans tomates';
+                    };
+                    if($burger['onions'] == 1 ){
+                        $onions = 'Oignons';
+                    }else{
+                        $onions = 'Sans oignons';
+                    };
+                    if($burger['pickles'] == 1 ){
+                        $pickles = 'Cornichons';
+                    }else{
+                        $pickles = ' ';
+                    };
+
+                    print_r("
+                        <article class='co_burgerBlock'>
+                            <h3>".$burger['burger_name']."</h3>
+                            <div class='co_burgerCard'>
+                                <div class='co_svgBurgerBlock'>
+                                    <img src='".$burger['burger_image']."'/>
+                                </div>
+                                <div class='co_burgerInformationsBlock'>
+                                    <p>".$burger['meat_name']."</p>
+                                    <ul class='co_burgerIngredients'>
+                                        <li><p>".$burger['cheese_name']."</p></li>
+                                        <li><p>".$burger['sauce_name']."</p></li>
+                                        <li><p>".$salad."</p></li>
+                                        <li><p>".$tomatoes."</p></li>
+                                        <li><p>".$onions."</p></li>
+                                        <li><p>".$pickles."</p></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                        </article>
+                    ");
+                 }; 
+            ?>
             </section>
         </section>
         <section id="co_frites">
