@@ -10,6 +10,7 @@ catch (PDOException $e) {
     $articleId = $_GET['id'];
     $articles = $bdd->query("SELECT * FROM article ar JOIN author au ON (au.author_id = ar.author_id) AND ar.article_id =".$articleId );
     $article = $articles->fetch();
+    include 'header.php';
     print_r("
 <head>
     <meta charset='utf-8' />
@@ -17,37 +18,10 @@ catch (PDOException $e) {
     <link href='../../css/style.css' rel='stylesheet'>
     <link href='https:\/\/fonts.googleapis.com/css?family=Lobster|Mul' rel='stylesheet'> </head>
 
+        
+    
 <body id='a_Article'>
-    <header id='s_header'>
-        <div id='titre'> <img src='../../images/food-truck.svg' href='header.html' title='foodtruck' alt='foodtruck' id='logo_foodtruck' />
-            <a id='le_try_again' href='header.html'>
-                <p>Le Try Again</p>
-            </a>
-        </div>
-        <div id='navigation'>
-            <a class='nav' id='menus' href='header.html'>
-                <p>Menus</p>
-            </a>
-            <a class='nav' id='retrouvez_nous' href='header.html'>
-                <p>Retrouvez-nous</p>
-            </a>
-            <a class='nav' id=evenements href='header.html'>
-                <p>Evenements </p>
-            </a>
-            <a class='nav' id='l\'equipe' href='header.html'>
-                <p>L'équipe </p>
-            </a>
-            <a class='nav' id='a propos' href='header.html'>
-                <p>A propos </p>
-            </a>
-            <a class='nav' id='blog' href='header.html'>
-                <p>Blog </p>
-            </a>
-            <a class='nav' id='contact' href='header.html'>
-                <p>Contact </p>
-            </a>
-        </div>
-    </header>
+    
 
     
 
@@ -75,4 +49,9 @@ catch (PDOException $e) {
             </div>
         </div>
     </section>
+    </body>
+    
 ");
+    include 'footer.php';
+    
+?>

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster|Muli" rel="stylesheet">
 </head>
 <?php
+    
 Try {
 	$bdd = new PDO('mysql:host=localhost;dbname=tryagain;charset=utf8', 'root', '');
     $bdd ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -16,9 +17,13 @@ catch (PDOException $e) {
         die('Erreur : ' . $e->getMessage());
 }
     
+    
 ?>
 
     <body id="s_evenement">
+        <?php 
+        include 'header.php';
+        ?>
         <div id="titre">
             <h1> Evénements</h1>
         </div>
@@ -43,7 +48,11 @@ catch (PDOException $e) {
              </div>
          </div>
     </div>
-     "); }; ?>
+     "); }; 
+        
+        ?>
     </body>
-
+    <?php 
+    include 'footer.php';
+    ?>
 </html>

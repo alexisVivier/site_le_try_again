@@ -15,6 +15,8 @@ catch (PDOException $e) {
         die('Erreur : ' . $e->getMessage());
 }  
         $burgers = $bdd->query("SELECT b.burger_name,b.burger_image, m.meat_name FROM burger b JOIN meat m ON (b.meat_id = m.meat_id)");
+        
+        include'header.php';
         ?>
     </head>
     <body id="s_homepage">
@@ -231,5 +233,8 @@ catch (PDOException $e) {
          <script type="text/javascript" src="../../slick/slick.min.js"></script>
          <script src="../../js/home_page.js"> </script>
     </body>
+            <?php 
+            include'footer.php';
+            ?>
 </html>
     
