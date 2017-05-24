@@ -14,7 +14,7 @@
         <section id="co_title">
             
             <img src="../../images/foodTruckEquipe.jpg"/>
-            <h1>L'équipe</h1>
+<!--            <h1>L'équipe</h1>-->
         </section>
         <section id="co_blockCards">
             <div class="flip-container" id="0" ontouchstart="this.classList.toggle('hover');">

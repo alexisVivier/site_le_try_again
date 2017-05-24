@@ -22,7 +22,7 @@
     ?>
     
     <body id="co_laCarte">
-        <h1>La Carte</h1>
+<!--        <h1>La Carte</h1>-->
         <section id="co_formules">
             <h2>Nos Formules</h2>
             <section id="co_blockFormules">

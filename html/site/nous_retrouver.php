@@ -11,7 +11,7 @@
         include 'header.php';
     ?>
     <body id="co_nousRetrouver">
-        <h1>Retrouvez-nous!</h1>
+<!--        <h1>Retrouvez-nous!</h1>-->
         <section id="co_dayCardsBlock">
             <article class="co_dayCard">
                 <p class="co_day">Lundi</p>

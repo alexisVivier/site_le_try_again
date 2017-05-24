@@ -11,7 +11,7 @@
         include 'header.php';
     ?>
     <body id="co_aPropos">
-        <h1>A propos</h1>
+<!--        <h1>A propos</h1>-->
         <section id="co_notreHistoire">
             <h2>Notre Histoire</h2>
             <article id="co_histoireBlock">

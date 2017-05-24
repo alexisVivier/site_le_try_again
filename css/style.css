@@ -1048,7 +1048,6 @@ form input[name=numerEvent] {
 
 #co_laCarte {
 	margin: 0;
-	padding: 0;
 }
 
 
@@ -2206,7 +2205,7 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 	align-items: center;
 	height: 5vw;
     width:100%;
-    box-shadow: 0px 0.7vw 5px black; 
+    box-shadow: 0px 0.7vw 10px black; 
 }
 
 #s_header .nav {
@@ -2258,6 +2257,8 @@ section#co_boissons #co_boissonsBlock .co_boissonBlock ul {
 
 #s_footer {
 	height: 10vw;
+    width:100%;
+    box-shadow: 0px -0.7vw 10px black; 
 }
 
 #s_footer #footer_haut {
@@ -2726,7 +2727,7 @@ body
 
 #s_evenement
 {
-      background-color: #EDEDED;
+      background-color: #3d3d3d;
 }
 
 #s_evenement body  
@@ -2737,14 +2738,12 @@ body
     align-items: center;
 }
 
-#s_evenement #titre
-{
+#s_evenement h1{
     font-size: 4vw;
     width: 100%;
-    padding: inherit;
     display: flex;
     justify-content: center;
-    color:#212121;
+    color:white;;
 }
 
 

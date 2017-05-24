@@ -20,7 +20,7 @@ catch (PDOException $e) {
 ?>
 
     <body id="co_blog">
-        <h1>Blog</h1>
+<!--        <h1>Blog</h1>-->
         <section id='co_articlesBlock'>
         <?php
             
