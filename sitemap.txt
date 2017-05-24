@@ -2,26 +2,70 @@
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>C:/wamp64/www/site_le_try_again/php/footer.php/</loc>
+  <loc>C:/wamp64/www/site_le_try_again/html/site/a_propos.php/</loc>
   <lastmod>2015-02-09T15:07:38+00:00</lastmod>
 </url>
 <url>
-  <loc>C:/wamp64/www/site_le_try_again/php/header.php/</loc>
+  <loc>C:/wamp64/www/site_le_try_again/html/site/article.php/</loc>
   <lastmod>2015-02-09T15:07:38+00:00</lastmod>
 </url>
 <url>
-  <loc>C:/wamp64/www/site_le_try_again/php/home_page.php/</loc>
+  <loc>C:/wamp64/www/site_le_try_again/htmlv/site/blog.php/</loc>
   <lastmod>2015-02-09T15:07:38+00:00</lastmod>
 </url>
 <url>
-  <loc>C:/wamp64/www/site_le_try_again/</loc>
+  <loc>C:/wamp64/www/site_le_try_again/html/site/evenement.php/</loc>
   <lastmod>2015-02-09T15:07:38+00:00</lastmod>
 </url>
 <url>
-  <loc>C:/wamp64/www/site_le_try_again/</loc>
+  <loc>C:/wamp64/www/site_le_try_again/html/site/footer.php/</loc>
   <lastmod>2015-02-09T15:07:38+00:00</lastmod>
 </url>
 <url>
-  <loc>C:/wamp64/www/site_le_try_again/</loc>
+  <loc>C:/wamp64/www/site_le_try_again/html/header.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/homepage.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/site/index.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/site/l_equipe.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/site/la_carte.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/site/nous_retrouver.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/site/reservation.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/admin/adminArticle.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/admin/adminBurgers.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/admin/adminEvents.php/</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/admin/adminHub.php</loc>
+  <lastmod>2015-02-09T15:07:38+00:00</lastmod>
+</url>
+<url>
+  <loc>C:/wamp64/www/site_le_try_again/html/admin/adminReponses.php</loc>
   <lastmod>2015-02-09T15:07:38+00:00</lastmod>
 </url>

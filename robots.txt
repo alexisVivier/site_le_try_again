@@ -47,6 +47,7 @@ User-agent: Googlebot-Image
 Allow: /images/
 
 User-agent: *
+disallow:*.html
 Disallow:*.js
 Disallow:*.css
 Disallow:/images
