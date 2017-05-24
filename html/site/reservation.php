@@ -46,27 +46,27 @@
                         <div class="nomPrenomInfos">
                             <div>
                                 <label for="nomReservation">Nom</label>
-                                <input type="text" name="nomReservation">
+                                <input type="text" name="nomReservation" required>
                             </div>
                             <div>
                                 <label for="prenomReservation">Prénom</label>
-                                <input type="text" name="prenomReservation">
+                                <input type="text" name="prenomReservation" required>
                             </div>
                         </div>
                         <div>
                             <label for="mailReservation">Adresse mail</label>
-                            <input type="email" name="mailReservation">
+                            <input type="email" name="mailReservation" required>
                         </div>
                         <div>
                             <label for="phoneReservation">Numéro de téléphone</label>
-                            <input type="number" name="phoneReservation">
+                            <input type="number" name="phoneReservation" required>
                         </div>
                         <div>
                             <label for="dateEvent">Date de l'évenement</label>
-                            <input type="date"  name="dateEvent"> </div>
+                            <input type="date"  name="dateEvent" required> </div>
                         <div>
                             <label for="peopleEvent">Nb de personnes présentes</label>
-                            <input type="number" name="peopleEvent">
+                            <input type="number" name="peopleEvent" required>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                     </div>
                     <div id="textAreaMoreInfos">
                         <label for="textAreaResa">Si vous avez plus d'infos à nous donner veuillez les mettre dans ce champ : </label>
-                        <textarea name="textResa"></textarea>
+                        <textarea name="textResa" required></textarea>
                     </div>
                 </div>
             </div>

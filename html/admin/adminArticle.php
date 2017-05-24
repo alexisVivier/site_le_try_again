@@ -40,23 +40,23 @@
 			<form method="POST" action="adminArticle.php" enctype="multipart/form-data">
 				<div>
 					<label for="articleTitle">Titre de l'article</label>
-					<input type="text" name="articleTitle"> </div>
+					<input type="text" name="articleTitle" required> </div>
 				<div>
 					<label for="contenuArticle">Article</label>
-					<textarea name="articleTxt"></textarea>
+					<textarea name="articleTxt" required></textarea>
 				</div>
 				<div>
 					<label for="auteurFirstName">Prénom de l'auteur</label>
-					<input type="text" name="auteurFirstName"> </div>
+					<input type="text" name="auteurFirstName" required> </div>
 				<div>
 					<label for="auteurLastName">Nom de l'auteur</label>
-					<input type="text" name="auteurLastName"> </div>
+					<input type="text" name="auteurLastName" required> </div>
                 <div>
 					<label for="auteurMail">Email auteur</label>
-					<input type="mail" name="auteurMail"> </div>
+					<input type="mail" name="auteurMail" required> </div>
                 <div>
-                    <label for="articleImg">Image de l'évenement</label>
-                    <input type="file" size="5000" name="articleImg">
+                    <label for="articleImg">Image de l'article</label>
+                    <input type="file" size="5000" name="articleImg" required>
                 </div>
 				<input type="submit" value="Ajouter" name="ajouter"> 
                 <?php 
@@ -133,7 +133,7 @@
 		<div id="removeArticleContainer">
 			<h2>Supprimer</h2>
 			<form action="" method="post">
-                <select name="supprArticle" id="supprArticle">
+                <select name="supprArticle" id="supprArticle" required>
                     <?php 
                        if(isset($_POST['suppr'])){
                             $chosenArticle = htmlspecialchars($_POST['supprArticle']);
