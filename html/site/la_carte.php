@@ -6,13 +6,18 @@
         <title>La Carte : Tout nos burgers maison et nos formules</title>
         <meta name="description_la_carte" content="Donnez vous envie avec nos fomules et nos burgers maison à thème geek! Soyez séduis par notre bière d'Astrub. Jetez un œil à nos frites maison." />
     </head>
-    <?php Try {
+    
+    <?php 
+        require '../../php/header.php';
+    ?>
+
+    <?php try {
 	$bdd = new PDO('mysql:host=localhost;dbname=tryagain;charset=utf8', 'root', '');
     $bdd ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e) {
-        die('Erreur : ' . $e->getMessage());
-}  
+    }
+    catch (PDOException $e) {
+            die('Erreur : ' . $e->getMessage());
+    }  
     $burgers = $bdd->query("SELECT b.burger_name, b.burger_image, i.salad, i.tomatoes, i.onions, i.pickles, m.meat_name, c.cheese_name, s.sauce_name FROM burger b JOIN ingredient i ON (b.ingredient_id = i.ingredient_id) JOIN meat m ON (b.meat_id = m.meat_id) JOIN cheese c ON (b.cheese_id = c.cheese_id) JOIN sauces s ON (b.sauce_id = s.sauce_id)");
     ?>
     
@@ -174,5 +179,15 @@ catch (PDOException $e) {
                 </article>
             </section>
         </section>
+        
+        <div class="co_hiddenBoutonTop">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 407.436 407.436" style="enable-background:new 0 0 407.436 407.436;" xml:space="preserve">
+            <polygon points="203.718,91.567 0,294.621 21.179,315.869 203.718,133.924 386.258,315.869 407.436,294.621 "/>
+
+            </svg>
+        </div>
+        <script src="../../js/jquery-3.2.1.min.js"></script>
+        <script src="../../js/boutonTop.js"></script>
     </body>
 </html>

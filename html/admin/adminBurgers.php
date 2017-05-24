@@ -94,7 +94,6 @@
                     <input type="radio" name="ingredientsAddPickles" value="1" />
                     <label for="ingredientsAddPickles"> Non </label>
                     <input type="radio" name="ingredientsAddPickles" value="0" /> </div>
-<<<<<<< HEAD
                     <div>
                         <select name='cheeseForm' id='cheeseForm'>
                             <?php 
@@ -117,31 +116,6 @@
                             ?>
                         </select>
                     </div>
-=======
-                <div>
-                    <select name="cheeseForm" id="cheeseForm" required>
-						<option value="2">American Cheese</option>
-						<option value="3">Bleu</option>
-						<option value="8">Brie</option>
-						<option value="1">Emmental</option>
-						<option value="7">Fromage de chèvre</option>
-						<option value="5">Fromage à raclette</option>
-						<option value="6">Monterey Jack</option>
-						<option value="4">Mozzarella</option>
-				</select>
-                </div>
-                <div>
-                    <select name="sauceForm" id="sauceForm" required>
-						<option value="1">Biggie</option>
-						<option value="2">Ketchup</option>
-						<option value="3">Mayonnaise</option>
-						<option value="4">Moutarde</option>
-						<option value="5">Sauce au bleu</option>
-						<option value="6">Sauce au poivre</option>
-						
-				</select>
-                </div>
->>>>>>> cda85ba290e3a263cd7ced5bc92417c294290413
                 <div>
                     <label for="eventImg">Image de l'évenement</label>
                     <input type="file" size="5000" name="eventImg" required>
