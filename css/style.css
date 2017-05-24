@@ -2357,6 +2357,7 @@ body
         
     }
 
+
      #s_homepage #fond3
     {
         margin-top: -36%;
@@ -2372,7 +2373,7 @@ body
     {
         height: 25vw;
         width: 100%;
-       overflow: hidden;
+       overflow: hidden; 
     }
     
      #s_homepage #reserve
@@ -2421,7 +2422,7 @@ body
         margin-left: 23%;
         width: 8%;
         height: 10vw;
-        transform: scale(1.4)
+        transform: scale(1.4);
     }
 
      #s_homepage #trait1

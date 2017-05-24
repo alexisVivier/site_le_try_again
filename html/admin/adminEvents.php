@@ -33,20 +33,20 @@
 			<form method="post" action="" enctype="multipart/form-data">
 				<div>
 					<label for="eventTitle">Titre de l'évenement</label>
-					<input type="text" name="eventTitle"> </div>
+					<input type="text" name="eventTitle" required> </div>
 				<div>
 					<label for="eventTxt">Description évenement</label>
-					<textarea name="eventTxt"></textarea>
+					<textarea name="eventTxt" required></textarea>
 				</div>
 				<div>
 					<label for="eventPlace">Lieu de l'évenement</label>
-					<input type="text" name="eventPlace"> </div>
+					<input type="text" name="eventPlace" required> </div>
 				<div>
 					<label for="eventDate">Date de l'évenement</label>
-					<input type="date" name="eventDate"> </div>
+					<input type="date" name="eventDate" required> </div>
                 <div>
                     <label for="eventImg">Image de l'évenement</label>
-                    <input type="file" size="5000" name="eventImg">
+                    <input type="file" size="5000" name="eventImg" required>
                 </div>
 				<input type="submit" value="Ajouter" name="ajouter"> 
                 <?php
@@ -113,7 +113,7 @@
 		<div id="removeEventContainer">
 			<h2>Supprimer</h2>
 			<form action="" method="post">
-				<select name="supprEvent" id="supprEvent">
+				<select name="supprEvent" id="supprEvent" required>
 					<?php 
                        if(isset($_POST['suppr'])){
                             $chosenEvent = htmlspecialchars($_POST['supprEvent']);

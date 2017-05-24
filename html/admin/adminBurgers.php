@@ -55,7 +55,7 @@
             <form action="" method="POST" enctype="multipart/form-data">
                 <div>
                     <label for="burgerName">Nom du burger</label>
-                    <input type="text" name="burgerName" /> </div>
+                    <input type="text" name="burgerName" required/> </div>
                 <div>
                     <label for="meatForm">Viande</label>
                         <select name='meatForm' id='meatForm'>
@@ -73,9 +73,9 @@
                 <div>
                     <label for="ingredientsAddSalad">Salade : </label>
                     <label for="ingredientsAddSalad"> Oui </label>
-                    <input type="radio" name="ingredientsAddSalad" value="1" />
+                    <input type="radio" name="ingredientsAddSalad" value="1" required/>
                     <label for="ingredientsAddSalad"> Non </label>
-                    <input type="radio" name="ingredientsAddSalad" value="0" /> </div>
+                    <input type="radio" name="ingredientsAddSalad" value="0" required/> </div>
                 <div>
                     <label for="ingredientsAddTomatoes">Tomates : </label>
                     <label for="ingredientsAddTomatoes"> Oui </label>
@@ -94,6 +94,7 @@
                     <input type="radio" name="ingredientsAddPickles" value="1" />
                     <label for="ingredientsAddPickles"> Non </label>
                     <input type="radio" name="ingredientsAddPickles" value="0" /> </div>
+<<<<<<< HEAD
                     <div>
                         <select name='cheeseForm' id='cheeseForm'>
                             <?php 
@@ -116,9 +117,34 @@
                             ?>
                         </select>
                     </div>
+=======
+                <div>
+                    <select name="cheeseForm" id="cheeseForm" required>
+						<option value="2">American Cheese</option>
+						<option value="3">Bleu</option>
+						<option value="8">Brie</option>
+						<option value="1">Emmental</option>
+						<option value="7">Fromage de chèvre</option>
+						<option value="5">Fromage à raclette</option>
+						<option value="6">Monterey Jack</option>
+						<option value="4">Mozzarella</option>
+				</select>
+                </div>
+                <div>
+                    <select name="sauceForm" id="sauceForm" required>
+						<option value="1">Biggie</option>
+						<option value="2">Ketchup</option>
+						<option value="3">Mayonnaise</option>
+						<option value="4">Moutarde</option>
+						<option value="5">Sauce au bleu</option>
+						<option value="6">Sauce au poivre</option>
+						
+				</select>
+                </div>
+>>>>>>> cda85ba290e3a263cd7ced5bc92417c294290413
                 <div>
                     <label for="eventImg">Image de l'évenement</label>
-                    <input type="file" size="5000" name="eventImg">
+                    <input type="file" size="5000" name="eventImg" required>
                 </div>
 
                 <input type="submit" name="ajouter" value="Ajouter">
@@ -227,7 +253,7 @@
             <div>
                 <p>Veuillez sélectionner le burger que vous voulez enlever de la carte</p>
                 <form action="" method="post">
-                    <select name="supprForm" id="supprForm">
+                    <select name="supprForm" id="supprForm" required>
                         <!--OPTIONS AVEC BOUCLE POUR AVOIR TOUS LES BURGERS DISPONIBLES ET CHOISIR CELUI QU'ON VEUT SUPPRIMER-->
                         <?php 
                            if(isset($_POST['suppr'])){
@@ -251,7 +277,7 @@
             <form>
                 <div>
                     <label for="burgerUpdateSelection">Sélection du burger</label>
-                    <select name="burgerUpdateSelection"></select>
+                    <select name="burgerUpdateSelection" required></select>
                 </div>
                 <div>
                     <label for="burgerTitleUpdateSelection">Titre du burger</label>
