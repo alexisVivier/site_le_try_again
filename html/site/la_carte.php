@@ -6,7 +6,15 @@
         <title>La Carte : Tout nos burgers maison et nos formules</title>
         <meta name="description_la_carte" content="Donnez vous envie avec nos fomules et nos burgers maison à thème geek! Soyez séduis par notre bière d'Astrub. Jetez un œil à nos frites maison." />
     </head>
-    
+    <?php Try {
+	$bdd = new PDO('mysql:host=localhost;dbname=tryagain;charset=utf8', 'root', '');
+    $bdd ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $e) {
+        die('Erreur : ' . $e->getMessage());
+}  
+    $burgers = $bdd->query("SELECT b.burger_name, b.burger_image, i.salad, i.tomatoes, i.onions, i.pickles, m.meat_name, c.cheese_name, s.sauce_name FROM burger b JOIN ingredient i ON (b.ingredient_id = i.ingredient_id) JOIN meat m ON (b.meat_id = m.meat_id) JOIN cheese c ON (b.cheese_id = c.cheese_id) JOIN sauces s ON (b.sauce_id = s.sauce_id)");
+    ?>
     
     <body id="co_laCarte">
         <h1>La Carte</h1>
@@ -54,95 +62,51 @@
         <section id="co_burgers">
             <h2>Nos Burgers</h2>
             <section id="co_burgersBlock">
-                <article class="co_burgerBlock">
-                    <h3>Le Type Normal</h3>
-                    <div class="co_burgerCard">
-                        <div class="co_svgBurgerBlock">
-                            <img src="../../images/leTypeNormal.png"/>
+                <?php
+                 while($burger = $burgers->fetch()){
+                /* Nos ingrédients en bdd sont des booléens, il faut donc leur donner une valeur avant de les afficher */
+                if($burger['salad'] == 1 ){
+                    $salad = 'Salade';
+                }else{
+                    $salad = 'Sans salade';
+                };
+                if($burger['tomatoes'] == 1 ){
+                    $tomatoes = 'Tomates';
+                }else{
+                    $tomatoes = 'Sans tomates';
+                };
+                if($burger['onions'] == 1 ){
+                    $onions = 'Oignons';
+                }else{
+                    $onions = 'Sans oignons';
+                };
+                if($burger['pickles'] == 1 ){
+                    $pickles = 'Cornichons';
+                }else{
+                    $pickles = ' ';
+                };
+                
+                        print_r("
+                <article class='co_burgerBlock'>
+                    <h3>".$burger['burger_name']."</h3>
+                    <div class='co_burgerCard'>
+                        <div class='co_svgBurgerBlock'>
+                            <img src='".$burger['burger_image']."'/>
                         </div>
-                        <div class="co_burgerInformationsBlock">
-                            <p>Boeuf</p>
-                            <ul class="co_burgerIngredients">
-                                <li><p>Cheddar</p></li>
-                                <li><p>Sauce Burger</p></li>
-                                <li><p>Salade</p></li>
-                                <li><p>Tomates</p></li>
-                                <li><p>Oignon</p></li>
+                        <div class='co_burgerInformationsBlock'>
+                            <p>".$burger['meat_name']."</p>
+                            <ul class='co_burgerIngredients'>
+                                <li><p>".$burger['cheese_name']."</p></li>
+                                <li><p>".$burger['sauce_name']."</p></li>
+                                <li><p>".$salad."</p></li>
+                                <li><p>".$tomatoes."</p></li>
+                                <li><p>".$onions."</p></li>
+                                <li><p>".$pickles."</p></li>
                             </ul>
                         </div> 
                     </div>
                 </article>
-                <article class="co_burgerBlock">
-                    <h3>Le Type Dragon</h3>
-                    <div class="co_burgerCard">
-                        <div class="co_svgBurgerBlock">
-                            <img src="../../images/leTypeDragon.png"/>
-                        </div>
-                        <div class="co_burgerInformationsBlock">
-                            <p>Boeuf Bacon</p>
-                            <ul class="co_burgerIngredients">
-                                <li><p>Cheddar</p></li>
-                                <li><p>Sauce au Poivre</p></li>
-                                <li><p>Salade</p></li>
-                                <li><p>Tomates</p></li>
-                                <li><p>Oignon</p></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </article>
-                <article class="co_burgerBlock">
-                    <h3>Le Type Vol</h3>
-                    <div class="co_burgerCard">
-                        <div class="co_svgBurgerBlock">
-                            <img src="../../images/leTypeVol.png"/>
-                        </div>
-                        <div class="co_burgerInformationsBlock">
-                            <p>Poulet</p>
-                            <ul class="co_burgerIngredients">
-                                <li><p>Cheddar</p></li>
-                                <li><p>Sauce épicée</p></li>
-                                <li><p>Salade</p></li>
-                                <li><p>Tomates</p></li>
-                                <li><p>Oignon</p></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </article>
-                <article class="co_burgerBlock">
-                    <h3>Le Type Roche</h3>
-                    <div class="co_burgerCard">
-                        <div class="co_svgBurgerBlock">
-                            <img src="../../images/leTypeRoche.png"/>
-                        </div>
-                        <div class="co_burgerInformationsBlock">
-                            <p>Boeuf</p>
-                            <ul class="co_burgerIngredients">
-                                <li><p>Fromage à raclette</p></li>
-                                <li><p>Sauce au bleu</p></li>
-                                <li><p>Salade</p></li>
-                                <li><p>Tomates</p></li>
-                                <li><p>Oignon</p></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </article>
-                <article class="co_burgerBlock">
-                    <h3>Le Type Feuille</h3>
-                    <div class="co_burgerCard">
-                        <div class="co_svgBurgerBlock">
-                            <img src="../../images/leTypeFeuille.png"/>
-                        </div>
-                        <div class="co_burgerInformationsBlock">
-                            <p>Steak de Soja</p>
-                            <ul class="co_burgerIngredients">
-                                <li><p>Sauce Burger</p></li>
-                                <li><p>Salade</p></li>
-                                <li><p>Tomates</p></li>
-                                <li><p>Oignon</p></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </article>
+                ");}; ?>
             </section>
         </section>
         <section id="co_frites">

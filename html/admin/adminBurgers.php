@@ -29,6 +29,13 @@
         $newIngredientId = $bdd->prepare("SELECT ingredient_id FROM ingredient WHERE salad = ? AND tomatoes = ? AND onions = ? AND pickles = ?");
         /* Enfin on Crée ce nouveau burger qui sera sélectionnable plus tard */
         $newBurger = $bdd->prepare("INSERT INTO burger(burger_name, ingredient_id, meat_id, cheese_id, sauce_id, burger_image) VALUES (?, ?, ?, ?, ?, ?)");
+    
+        /* Selection de tous les fromages pour afichage dynamique */
+        $cheeses = $bdd->query("SELECT * FROM cheese");
+        /* Selection de toutes les sauces pour afichage dynamique */
+        $sauces = $bdd->query("SELECT * FROM sauces");
+        /* Selection de toutes les viandes pour afichage dynamique */
+        $meats = $bdd->query("SELECT * FROM meat");
         /*---------Fin gestion ajout burger--------*/
         
         /*---------Gestion suppression burger--------*/
@@ -50,8 +57,19 @@
                     <label for="burgerName">Nom du burger</label>
                     <input type="text" name="burgerName" /> </div>
                 <div>
-                    <label for="typeViandeAddSelection">Viande</label>
-                    <input type="text" name="typeViandeAddSelection" required /> </div>
+                    <label for="meatForm">Viande</label>
+                        <select name='meatForm' id='meatForm'>
+                            <?php 
+                            while($meat = $meats->fetch()){
+                            print_r("
+                            <option value='".$meat['meat_id']."'>".$meat['meat_name']."</option>
+                            ");
+                            };
+                            ?>
+                            <option value="0">Insérer une nouvelle viande :</option>
+                        </select>
+                    </div>
+                    <input type="text" name="typeViandeAddSelection"  /> 
                 <div>
                     <label for="ingredientsAddSalad">Salade : </label>
                     <label for="ingredientsAddSalad"> Oui </label>
@@ -76,29 +94,28 @@
                     <input type="radio" name="ingredientsAddPickles" value="1" />
                     <label for="ingredientsAddPickles"> Non </label>
                     <input type="radio" name="ingredientsAddPickles" value="0" /> </div>
-                <div>
-                    <select name="cheeseForm" id="cheeseForm">
-						<option value="2">American Cheese</option>
-						<option value="3">Bleu</option>
-						<option value="8">Brie</option>
-						<option value="1">Emmental</option>
-						<option value="7">Fromage de chèvre</option>
-						<option value="5">Fromage à raclette</option>
-						<option value="6">Monterey Jack</option>
-						<option value="4">Mozzarella</option>
-				</select>
-                </div>
-                <div>
-                    <select name="sauceForm" id="sauceForm">
-						<option value="1">Biggie</option>
-						<option value="2">Ketchup</option>
-						<option value="3">Mayonnaise</option>
-						<option value="4">Moutarde</option>
-						<option value="5">Sauce au bleu</option>
-						<option value="6">Sauce au poivre</option>
-						
-				</select>
-                </div>
+                    <div>
+                        <select name='cheeseForm' id='cheeseForm'>
+                            <?php 
+                            while($cheese = $cheeses->fetch()){
+                            print_r("
+                            <option value='".$cheese['cheese_id']."'>".$cheese['cheese_name']."</option>
+                            ");
+                            };
+                            ?>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="sauceForm" id="sauceForm">
+                            <?php 
+                            while($sauce = $sauces->fetch()){
+                            print_r("
+                            <option value='".$sauce['sauce_id']."'>".$sauce['sauce_name']."</option>
+                            ");
+                            };
+                            ?>
+                        </select>
+                    </div>
                 <div>
                     <label for="eventImg">Image de l'évenement</label>
                     <input type="file" size="5000" name="eventImg">
@@ -151,6 +168,7 @@
                         
                 $pathImage = $location.$name;
                 $burgerName = htmlspecialchars($_POST['burgerName']);
+                $meat = htmlspecialchars($_POST['meatForm']);
                 $newMeatName = htmlspecialchars($_POST['typeViandeAddSelection']);
                 $salad=htmlspecialchars($_POST['ingredientsAddSalad']);
                 $tomatoes=htmlspecialchars($_POST['ingredientsAddTomatoes']);
@@ -158,14 +176,17 @@
                 $pickles=htmlspecialchars($_POST['ingredientsAddPickles']);
                 $cheese=htmlspecialchars($_POST['cheeseForm']);
                 $sauce=htmlspecialchars($_POST['sauceForm']);
-                /* On ajoute une nouvelle viande en BDD si une viande n'a pas été déjà insérée, ensuite on recup son ID en bdd*/
-                $newMeat->bindParam('1', $newMeatName);
-                $newMeat->execute();
                 
+                    /* On teste la séléction de viande  */
+                if($meat == 0){
+                /* On ajoute une nouvelle viande en BDD si une viande n'a pas été déjà insérée, ensuite on recup son ID en bdd*/
+                    $newMeat->bindParam('1', $newMeatName);
+                    $newMeat->execute();
                 /* On récup l'ID de la nouvelle viande */
-                $newMeatId->bindParam('1', $newMeatName);
-                $newMeatId->execute();
-                $meatId = $newMeatId->fetch();
+                    $newMeatId->bindParam('1', $newMeatName);
+                    $newMeatId->execute();
+                    $meatId = $newMeatId->fetch();
+                }
                     
                 /* On recup l'id quatuor d'ingrédients et l'id après les avoir insérés */
                 $ingredients->bindParam('1', $salad);
@@ -185,7 +206,11 @@
                 /* Requête finale d'ajout d'un burger après avoir recup l'ID de ingredient et de la viande */
                 $newBurger->bindParam('1', $burgerName);
                 $newBurger->bindParam('2', $ingredientId['0']);
-                $newBurger->bindParam('3', $meatId['0']);
+                if($meat == 0){
+                    $newBurger->bindParam('3', $meatId['0']);
+                }else{
+                    $newBurger->bindParam('3', $meat);
+                }
                 $newBurger->bindParam('4', $cheese);
                 $newBurger->bindParam('5', $sauce);
                 $newBurger->bindParam('6', $pathImage);

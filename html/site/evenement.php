@@ -2,10 +2,10 @@
 <html>
 
 <head>
-	<meta charset="utf-8" />
-	<title> page évènement</title>
-	<link href="../../css/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Muli" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title> page évènement</title>
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Muli" rel="stylesheet">
 </head>
 <?php
 Try {
@@ -17,9 +17,12 @@ catch (PDOException $e) {
 }
     
 ?>
-<body id="s_evenement">
-	<div id="titre"><p> Evénements </p> </div>
-    <?php
+
+    <body id="s_evenement">
+        <div id="titre">
+            <h1> Evénements</h1>
+        </div>
+        <?php
         $events = $bdd->query("SELECT * FROM event");
         while ($event = $events->fetch()) { 
             print_r("
@@ -30,12 +33,17 @@ catch (PDOException $e) {
             <img title='image évènement' alt='image de l'évènement' src='".$event['event_img']."'  />
         </div>
          <div class='event'>
-            <p class='event_nom'>".$event['event_title']."</p>
+            <h2 class='event_nom'>".$event['event_title']."</h2>
             <p class='contenue_event'>
             ".$event['event_txt']."
             </p>
+            <div class='infos'>
+                <p>".$event['event_date']."</p>
+                <p>".$event['event_place']."</p>
+             </div>
          </div>
     </div>
      "); }; ?>
-</body>
+    </body>
+
 </html>
