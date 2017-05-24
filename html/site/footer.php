@@ -1,7 +1,12 @@
-
+ <head>
+        <meta charset="utf-8"/>
+         <link href="../../css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Muli" rel="stylesheet"> 
+    </head >
         <footer id="s_footer">
         <div id="footer_haut">
         <div id="reseaux_sociaux">
+        <a href="https://www.facebook.com/Toadleboss/" target="_blank">
         <svg 
 	        viewBox="0 0 474.294 474.294" class="reseaux_sociaux_logo" >
             <circle style="fill:#3A5A98;" cx="237.111" cy="236.966" r="236.966"/>
@@ -14,7 +19,9 @@
 	        c6.436,0,20.015,0,32.587,0c0-6.623,0-29.481,0-50.592c-16.786,0-35.883,0-44.306,0C194.201,93.028,195.682,141.671,195.682,148.937
 	        z"/>
         </svg>
-            
+            </a>
+            <a href="https://twitter.com/Le_Try_Again" target="_blank">
+
         <svg
             viewBox="0 0 512 512" class="reseaux_sociaux_logo" >
             <circle style="fill:#65A2D9;" cx="256" cy="256" r="256"/>
@@ -41,7 +48,10 @@
             v-0.964c0-3.241,1.465-6.291,4.024-8.37c9.706-7.882,18.16-17.158,25.122-27.572C403.796,164.578,400.896,161.13,397.872,162.471z"
             </path>
             </svg>
-            
+            </a>
+                
+            <a href="https://www.instagram.com/letryagain_nantes/" target="_blank">
+
             <svg 
                  viewBox="0 0 512 512" class="reseaux_sociaux_logo">
                  <circle style="fill:#6C27B3;" cx="256" cy="256" r="256"/>
@@ -68,7 +78,9 @@
 		        c25.579,0,46.313,20.735,46.313,46.316c0,25.579-20.733,46.313-46.313,46.313c-0.193,0-0.383-0.012-0.574-0.014v29.482
 		        c0.193,0.002,0.381,0.014,0.574,0.014c41.794,0,75.795-34.002,75.795-75.795C331.795,214.206,297.794,180.202,256,180.202z"/>
             </svg>
-                
+                </a>
+               <a href="https://www.youtube.com/channel/UCna3LMMbYyzLfuXIdvV5kOw/featured" target="_blank">
+ 
             <svg 
 	 viewBox="0 0 473.931 473.931" class="reseaux_sociaux_logo" >
 <circle style="fill:#D42428;" cx="236.966" cy="236.966" r="236.966"/>
@@ -106,6 +118,7 @@
 	L181.722,197.269z"/>
 
 </svg>
+                </a>
 
         </div>
         <div id="autre">
@@ -118,4 +131,14 @@
         <div id="footer_bas">
             <p id="CGU"> ©LetTryAgain 2017 - Tous droits réservés - CGU</p>
         </div>
+            <div class="co_hiddenBoutonTop">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 407.436 407.436" style="enable-background:new 0 0 407.436 407.436;" xml:space="preserve">
+            <polygon points="203.718,91.567 0,294.621 21.179,315.869 203.718,133.924 386.258,315.869 407.436,294.621 "/>
+
+            </svg>
+        </div>
+            <script src="../../js/jquery-3.2.1.min.js"></script>
+        <script src="../../js/boutonTop.js"></script>
         </footer>
+</html>

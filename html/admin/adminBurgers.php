@@ -56,7 +56,7 @@
     ?>
 
 <body id="a_admin_burgers">
-    <h1>Menu</h1>
+    <h1>Burgers</h1>
     <div id="a_burgersModifsContainer">
         <div id="a_burgersModifsAdd">
             <h2>Ajouter</h2>
