@@ -13,7 +13,8 @@
 }
 catch (PDOException $e) {
         die('Erreur : ' . $e->getMessage());
-}  
+}          
+        /* Affichage de tous les bugers en bdd */
         $burgers = $bdd->query("SELECT b.burger_name,b.burger_image, m.meat_name FROM burger b JOIN meat m ON (b.meat_id = m.meat_id)");
         ?>
     </head>
