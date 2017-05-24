@@ -314,9 +314,10 @@ a {
 	padding: 1vh 0;
 }
 
-#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form input,
+#a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form input, #a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form
 select {
 	border-bottom: solid 1px white;
+	color: white;
 }
 
 #a_admin_burgers #a_burgersModifsContainer #burgersModifsUpdate form input[type=submit] {

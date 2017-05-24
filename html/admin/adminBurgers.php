@@ -56,7 +56,7 @@
     ?>
 
 <body id="a_admin_burgers">
-    <h1>Menu</h1>
+    <h1>Burgers</h1>
     <div id="a_burgersModifsContainer">
         <div id="a_burgersModifsAdd">
             <h2>Ajouter</h2>
@@ -104,10 +104,7 @@
                     <input type="radio" name="ingredientsAddPickles" value="1" />
                     <label for="ingredientsAddPickles"> Non </label>
                     <input type="radio" name="ingredientsAddPickles" value="0" /> </div>
-<<<<<<< HEAD
 
-=======
->>>>>>> 51e81a56d6baf7a327cdef50ac31fa660f465d49
                     <div>
                         <select name='cheeseForm' id='cheeseForm'>
                             <?php 
